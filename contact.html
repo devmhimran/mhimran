@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mahmud Hasan Imran</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="./index.html">
+                    <img class="logo" src="./assets/img/logo.png">
+                  </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="./index.html">Home</a>
+                    <a class="navbar-item">Article</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Wordpress</a>
+                
+                        <div class="navbar-dropdown">
+                          <a class="navbar-item">Themes</a>
+                          <a class="navbar-item">Plugins</a>
+                          <hr class="navbar-divider">
+                          <a class="navbar-item">Projects</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="navbar-item">HTML Template</a>
+                    <a class="navbar-item">About</a>
+                    <a class="navbar-item" href="./contact.html">Contact</a>
+                    
+                </div>
+            </div>
+          </nav>
+    </div>
+    <hr>
+
+    <div class="contact-section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="box contact-info">
+                        <h1 class="info">Info</h1>
+                        <p class="email-account"><i class="far fa-envelope info-icon"></i>mahmud.bubt.150@gmail.com</p>
+                        <div class="social-account">
+                            <a href="https://www.facebook.com/Mhimran266/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/mahmudhimran2/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/mahmud-hasan-9301a81b4/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com/mahmud_150"><i class="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/mahmud_150"><i class="fab fa-github"></i></a>
+                            <a href="https://gitlab.com/imran150"><i class="fab fa-gitlab"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <form class="box contact-box" id="my-form" action="https://formspree.io/f/xwkazljk" method="POST">
+                        <div class="field">
+                          <label class="label">Email</label>
+                          <div class="control">
+                            <input class="input is-info" type="text" name="name" id="full-name" placeholder="Name">
+                          </div>
+                        </div>
+                      
+                        <div class="field">
+                          <label class="label">Email</label>
+                          <div class="control">
+                            <input class="input is-info" type="email"  name="_replyto" id="email-address" placeholder="e.g. alex@example.com">
+                          </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea is-info" name="message" id="message" placeholder="Info textarea"></textarea>
+                            </div>
+                          </div>
+                      
+                        <button class="button is-info" type="submit" id="my-form-button">Send</button>
+                        <p class="form-status has-text-primary" id="my-form-status"></p>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-main">
+        <div class="container">
+            <p class="footer-text">© 2021 Mahmud Hasan Imran. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
