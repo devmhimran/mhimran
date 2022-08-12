@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import devmhimranLogo from '../Assets/devmhimran-logo.png'
+import { Link } from 'react-router-dom';
+import devmhimranLogo from '../Assets/devmhimran-logo.png';
 
-const NavBar = () => {
+const Navbar = () => {
     const navLink = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='#skill'>Skill</Link></li>
@@ -34,4 +34,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default Navbar;
