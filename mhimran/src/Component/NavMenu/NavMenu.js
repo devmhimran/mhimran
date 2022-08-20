@@ -66,7 +66,7 @@ const NavMenu = () => {
                         variant="small"
                         className="mr-4 cursor-pointer py-1.5 font-normal"
                     >
-                        <span><img className='w-36' src={devMhImranLogo} alt="devmhimran-logo" /></span>
+                        <span><img className='lg:w-36 md:w-32 w-32' src={devMhImranLogo} alt="devmhimran-logo" /></span>
                     </Typography>
                     <div className="hidden lg:block">{navList}</div>
                     <Button variant="gradient" size="sm" className="hidden lg:inline-block">
