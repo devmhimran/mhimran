@@ -7,8 +7,8 @@ import {
 
 const MySkill = () => {
     return (
-        <div className='container max-w-screen-xl mx-auto lg:py-24 md:py-16 sm:py-16'>
-            <h1 className='text-5xl font-bold mb-6'>My Skills</h1>
+        <div className='container max-w-screen-xl mx-auto lg:py-24 md:py-16 py-16'>
+            <h1 className='text-3xl lg:text-5xl font-bold mb-6 lg:text-left text-center'>My Skills</h1>
             <Card>
                 <CardBody>
                     <div className="skills grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10">
