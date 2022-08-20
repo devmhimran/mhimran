@@ -3,11 +3,11 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import heroImage from '../Assets/hero-image.png';
 // import bgImg from '../Assets/bg-img.png'
 import './hero.css'
-
+// lg:pb-24 lg:pt-40 md:py-16 py-24
 const Hero = () => {
     return (
         <div className="hero__main">
-            <div className='container max-w-screen-xl mx-auto lg:py-24 md:py-16 py-24'>
+            <div className='container max-w-screen-xl mx-auto h-screen pt-44 mt-[-115px]'>
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 container mx-auto">
                    
                     <div className="hero__left flex lg:items-center justify-center">

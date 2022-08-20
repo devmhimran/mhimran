@@ -28,32 +28,32 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
+                <Link to='skill' className="flex items-center">Skill</Link>
+            </Typography>
+            <Typography
+                as="li"
+                variant="medium"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
+                <Link to='about' className="flex items-center">About</Link>
+            </Typography>
+            <Typography
+                as="li"
+                variant="medium"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
+                <Link to='portfolio' className="flex items-center">Portfolio</Link>
+            </Typography>
+            {/* <Typography
+                as="li"
+                variant="medium"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
                 <Link to='/' className="flex items-center">Skill</Link>
-            </Typography>
-            <Typography
-                as="li"
-                variant="medium"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <Link to='/' className="flex items-center">About</Link>
-            </Typography>
-            <Typography
-                as="li"
-                variant="medium"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <Link to='/' className="flex items-center">Portfolio</Link>
-            </Typography>
-            <Typography
-                as="li"
-                variant="medium"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <Link to='/' className="flex items-center">Skill</Link>
-            </Typography>
+            </Typography> */}
         </ul>
     );
     return (

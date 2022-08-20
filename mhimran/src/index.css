@@ -10,10 +10,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #1F1F1F ; */
+
+}
+.hero__main{
   background-image: url('./Component/Assets/bg-img.png');
   background-repeat: no-repeat;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

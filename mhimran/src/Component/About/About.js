@@ -3,7 +3,7 @@ import devMhImranImage from '../Assets/devmhimran-image.jpg'
 
 const About = () => {
     return (
-        <div className='about container mx-auto'>
+        <div className='about container mx-auto' id='about'>
             <div className="about__main max-w-screen-xl mx-auto lg:py-24 md:py-16 py-16">
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                     

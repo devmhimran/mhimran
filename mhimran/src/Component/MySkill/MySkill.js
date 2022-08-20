@@ -7,7 +7,7 @@ import {
 
 const MySkill = () => {
     return (
-        <div className='container max-w-screen-xl mx-auto lg:py-24 md:py-16 py-16'>
+        <div className='container max-w-screen-xl mx-auto lg:py-24 md:py-16 py-16' id='skill'>
             <h1 className='text-3xl lg:text-5xl font-bold mb-6 lg:text-left text-center'>My Skills</h1>
             <Card>
                 <CardBody>
