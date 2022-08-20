@@ -3,12 +3,12 @@ import devMhImranImage from '../Assets/devmhimran-image.jpg'
 
 const About = () => {
     return (
-        <div className='about'>
-            <div className="about__main container max-w-screen-xl mx-auto lg:py-24 md:py-16 sm:py-16">
+        <div className='about container mx-auto'>
+            <div className="about__main max-w-screen-xl mx-auto lg:py-24 md:py-16 sm:py-16">
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                     
                     <div className="about__image">
-                        <img className='w-10/12 mr-auto rounded-lg' src={devMhImranImage} alt="" />
+                        <img className='lg:w-10/12 md:full mr-auto rounded-lg' src={devMhImranImage} alt="" />
                     </div>
 
                     <div className="about__heading flex items-center">

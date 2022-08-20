@@ -8,7 +8,8 @@ const Hero = () => {
     return (
         <div className="hero__main">
             <div className='container max-w-screen-xl mx-auto lg:py-24 md:py-16 sm:py-16'>
-                <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-4">
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-4 container mx-auto">
+                   
                     <div className="hero__left flex items-center">
                         <div className="hero__left__main">
                             <h3 className='text-cyan-500 text-2xl'>Hi, I am</h3>
@@ -28,6 +29,7 @@ const Hero = () => {
                     <div className="hero__right">
                         <img className='w-full' src={heroImage} alt="heroImage" />
                     </div>
+                    
                 </div>
             </div>
         </div>
