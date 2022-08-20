@@ -11,15 +11,15 @@ const Hero = () => {
                 <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-4">
                     <div className="hero__left flex items-center">
                         <div className="hero__left__main">
-                            <h3 className='text-lime-500 text-2xl'>Hi, I am</h3>
+                            <h3 className='text-cyan-500 text-2xl'>Hi, I am</h3>
                             <h1 className='text-gray-900 text-7xl font-bold'>Mahmud<br></br> Hasan Imran</h1>
                             <div className="details mt-3">
-                                <h3 className='text-2xl font-semibold text-lime-500'>Front End Developer</h3>
+                                <h3 className='text-2xl font-semibold text-cyan-500 mb-3'>Front End Developer</h3>
                                 <div className='text-gray-900 text-lg'>
                                     <p className='inline'>Web Developer</p>
-                                    <GoPrimitiveDot className='inline mx-3 text-lime-500'></GoPrimitiveDot>
+                                    <GoPrimitiveDot className='inline mx-3 text-cyan-500'></GoPrimitiveDot>
                                     <p className='text-gray-900 inline'>WordPress Expert</p>
-                                    <GoPrimitiveDot className='inline mx-3 text-lime-500'></GoPrimitiveDot>
+                                    <GoPrimitiveDot className='inline mx-3 text-cyan-500'></GoPrimitiveDot>
                                     <p className='text-gray-900 inline'>Computer Engineer</p>
                                 </div>
                             </div>
