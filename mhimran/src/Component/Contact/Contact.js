@@ -7,11 +7,11 @@ const Contact = () => {
         <div className='contact'>
             <div className="container mx-auto max-w-screen-xl lg:py-24 md:py-16 py-16">
                 <div className="contact__heading">
-                    <h1 className='text-3xl lg:text-5xl font-bold mb-4 lg:mb-6'>Contact</h1>
+                    <h1 className='text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 lg:text-left text-center'>Contact</h1>
                 </div>
-                <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 lg:text-left text-center">
                     <div className="contact__left lg:mr-6 mr-0 flex items-center">
-                        <div className="contact__left__main">
+                        <div className="contact__left__main lg:p-0 p-4">
                             <p>I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, please let me know. Or you can just 'say hi' to me.</p>
                             <div className="contact-button mt-6">
                                 <Button size="md"><a  href="mailto:mahmud.bubt.150@gmail.com">Contact Me </a></Button>
