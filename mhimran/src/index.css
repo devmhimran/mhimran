@@ -12,7 +12,7 @@ body {
   /* background-color: #1F1F1F ; */
 
 }
-.hero__main{
+.hero__main,.contact{
   background-image: url('./Component/Assets/bg-img.png');
   background-repeat: no-repeat;
 }
