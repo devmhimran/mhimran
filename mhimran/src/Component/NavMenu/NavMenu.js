@@ -8,7 +8,8 @@ import {
     IconButton,
 } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
-import devMhImranLogo from '../Assets/devmhimran-logo-dark.png'
+import devMhImranLogo from '../Assets/devmhimran-logo-dark.png';
+import devmhimranResume from '../Assets/mahmud-hasan-resume.pdf';
 
 const NavMenu = () => {
     const [openNav, setOpenNav] = useState(false);
@@ -70,7 +71,7 @@ const NavMenu = () => {
                     </Typography>
                     <div className="hidden lg:block">{navList}</div>
                     <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-                        <span>Resume</span>
+                        <a href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
                     </Button>
                     <IconButton
                         variant="text"
@@ -112,8 +113,8 @@ const NavMenu = () => {
                 </div>
                 <MobileNav open={openNav}>
                     {navList}
-                    <Button variant="gradient" size="sm" fullWidth className="mb-2">
-                        <span>Resume</span>
+                    <Button variant="gradient" size="sm" fullWidth className="mb-2" to="../Assets/mahmud-hasan-resume.pdf" target="_blank" download>
+                        <a href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
                     </Button>
                 </MobileNav>
             </Navbar>
