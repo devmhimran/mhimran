@@ -46,18 +46,18 @@ const Contact = () => {
 
                     </div>
                     <div className="contact__right lg:ml-6 ml-0 flex justify-center">
-                        <form ref={form} onSubmit={sendEmail}>
-                            <div className="w-96 my-5">
-                                <Input label="Username" name="user_name" />
+                        <form className='w-10/12' ref={form} onSubmit={sendEmail}>
+                            <div className="w-full lg:w-11/12 my-5">
+                                <Input className='border-black' label="Username" name="user_name" />
                             </div>
-                            <div className="w-96 my-5">
+                            <div className="w-full lg:w-11/12 my-5">
                                 <Input label="User Email" name="user_email" />
                             </div>
-                            <div className="w-96 my-5">
+                            <div className="w-full lg:w-11/12 my-5">
                                 <Textarea label="Message" name="message" />
                             </div>
-                            <div className="w-96 my-3">
-                                <Button size="md" type="submit">Send</Button>
+                            <div className="w-full lg:w-11/12 my-3">
+                                <button className='border border-[#262524] w-24 text-center py-1 rounded text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200' type='submit'>Send</button>
                             </div>
                         </form>
                     </div>

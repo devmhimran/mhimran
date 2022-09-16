@@ -16,7 +16,7 @@ import {
 const PortfolioItem = ({ portfolioData }) => {
     const { name, thumbnail, description, liveSite, clientSide, serverSide, technology } = portfolioData;
     return (
-        <Card className="w-96 shadow-white border border-gray-200 rounded-lg">
+        <Card className="shadow-white border border-gray-200 rounded-lg">
             <img className='rounded-t-lg' src={thumbnail} alt="" />
             <CardBody className="text-center">
                 <Typography variant="h4" color="blue-gray" className="mb-2">
