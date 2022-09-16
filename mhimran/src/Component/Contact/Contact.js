@@ -1,6 +1,5 @@
 import { Button, Input, Textarea } from '@material-tailwind/react';
 import React, { useRef } from 'react';
-import { GrFacebookOption } from 'react-icons/gr';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -46,7 +45,7 @@ const Contact = () => {
                         </div>
 
                     </div>
-                    <div className="contact__right lg:ml-6 ml-0">
+                    <div className="contact__right lg:ml-6 ml-0 flex justify-center">
                         <form ref={form} onSubmit={sendEmail}>
                             <div className="w-96 my-5">
                                 <Input label="Username" name="user_name" />
