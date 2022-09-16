@@ -81,6 +81,126 @@
     },
     {
       "id": "9",
+      "name": "Bandhan Convention Center",
+      "description": "It is a Convention hall website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-bandhan-convention-center.png",
+      "liveSite": "https://bandhan-convension-center.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/convention-center",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Font"
+    },
+    {
+      "id": "10",
+      "name": "Country Detail",
+      "description": "It is a all country detail website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-country-info.png",
+      "liveSite": "https://country-detail-info.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/country-details-api",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, JS, API, Font"
+    },
+    {
+      "id": "11",
+      "name": "Developer Portfolio",
+      "description": "It is a portfolio website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-developer-portfolio.png",
+      "liveSite": "https://devmhimran.github.io/developer-portfolio/",
+      "clientSide": "https://github.com/devmhimran/developer-portfolio",
+      "serverSide": "",
+      "technology": "Html, Css, Font"
+    },
+    {
+      "id": "12",
+      "name": "Download Link Generator",
+      "description": "It is a download link generator website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-download-link-generator.png",
+      "liveSite": "https://devmhimran.github.io/download-link-generator/",
+      "clientSide": "https://github.com/devmhimran/download-link-generator",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Js, Font"
+    },
+    {
+      "id": "13",
+      "name": "Find You",
+      "description": "It is a app landing page",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-find-you.png",
+      "liveSite": "https://find-you.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/find-you",
+      "serverSide": "",
+      "technology": "Html, Css, Netlify, Font"
+    },
+    {
+      "id": "14",
+      "name": "Hero Headphone",
+      "description": "It is a product review website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-hero-headphone.png",
+      "liveSite": "https://hero-headphone.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/hero-headphone",
+      "serverSide": "",
+      "technology": "React Js, Css, Bootstrap, API, Js, Rechart, Netlify"
+    },
+    {
+      "id": "15",
+      "name": "Influencer Gear",
+      "description": "It is a camera gear or accessories website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-influencer-gear.png",
+      "liveSite": "https://devmhimran.github.io/influencer-gear/",
+      "clientSide": "https://github.com/devmhimran/influencer-gear",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Font"
+    },
+    {
+      "id": "16",
+      "name": "Penguin Fashion",
+      "description": "It is a fashion and accessories website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-penguin-fashion.png",
+      "liveSite": "https://devmhimran.github.io/penguin-fashion/",
+      "clientSide": "https://github.com/devmhimran/penguin-fashion",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Font"
+    },
+    {
+      "id": "17",
+      "name": "Personal Balance Checker",
+      "description": "It is a balance and expense checker website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-personal-balance-checker.png",
+      "liveSite": "https://personal-balance-checker.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/personal-balance-checker",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Js, Font"
+    },
+    {
+      "id": "18",
+      "name": "Phone Info",
+      "description": "It is a phone information website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-phone-info.png",
+      "liveSite": "https://mobopedia.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/mobile-info",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Js, API, Netlify, Font"
+    },
+    {
+      "id": "19",
+      "name": "Quote Generator",
+      "description": "It is a quote generating website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-quote-generator.png",
+      "liveSite": "https://devmhimran.github.io/quote-generator-js/",
+      "clientSide": "https://github.com/devmhimran/quote-generator-js",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Js, API, Netlify, Font"
+    },
+    {
+      "id": "20",
+      "name": "World Weather Tour",
+      "description": "It is a weather report website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-world-weather-tour.png",
+      "liveSite": "https://world-weather-tour.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/world-weather-tour",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Js, API, Netlify, Font"
+    },
+    {
+      "id": "29",
       "name": "Rusticrew",
       "description": "E-commerce Website",
       "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-preview-rusticrew.jpg",
@@ -90,7 +210,7 @@
       "technology": "Wordpress, Elementor, Elementor Pro, Floating Cart"
     },
     {
-      "id": "10",
+      "id": "30",
       "name": "Grocery Supplement",
       "description": "E-commerce Website",
       "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-grocery-supplement.jpg",

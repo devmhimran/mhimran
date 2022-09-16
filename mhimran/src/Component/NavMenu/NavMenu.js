@@ -29,7 +29,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to='skill' className="flex items-center">Skill</Link>
+                <a href='#skill' className="flex items-center">Skill</a>
             </Typography>
             <Typography
                 as="li"
@@ -37,7 +37,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to='about' className="flex items-center">About</Link>
+                <a href='#about' className="flex items-center">About</a>
             </Typography>
             <Typography
                 as="li"
@@ -45,7 +45,15 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to='portfolio' className="flex items-center">Portfolio</Link>
+                <a href='#portfolio' className="flex items-center">Portfolio</a>
+            </Typography>
+            <Typography
+                as="li"
+                 
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
+                <a href='#contact' className="flex items-center">Contact</a>
             </Typography>
             {/* <Typography
                 as="li"
