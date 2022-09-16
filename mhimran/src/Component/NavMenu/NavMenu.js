@@ -25,7 +25,7 @@ const NavMenu = () => {
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <Typography
                 as="li"
-                variant="medium"
+                 
                 color="blue-gray"
                 className="p-1 font-normal"
             >
@@ -33,7 +33,7 @@ const NavMenu = () => {
             </Typography>
             <Typography
                 as="li"
-                variant="medium"
+                 
                 color="blue-gray"
                 className="p-1 font-normal"
             >
@@ -41,7 +41,7 @@ const NavMenu = () => {
             </Typography>
             <Typography
                 as="li"
-                variant="medium"
+                 
                 color="blue-gray"
                 className="p-1 font-normal"
             >
@@ -49,7 +49,7 @@ const NavMenu = () => {
             </Typography>
             {/* <Typography
                 as="li"
-                variant="medium"
+                 
                 color="blue-gray"
                 className="p-1 font-normal"
             >

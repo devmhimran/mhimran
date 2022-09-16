@@ -17,8 +17,8 @@ const MySkill = () => {
                                 <p>React Js</p>
                                 <p>75%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -26,8 +26,8 @@ const MySkill = () => {
                                 <p>PHP</p>
                                 <p>80%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -35,17 +35,17 @@ const MySkill = () => {
                                 <p>Node Js</p>
                                 <p>70%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
                             <div className="skill__detail flex justify-between">
-                                <p>Node Js</p>
+                                <p>Express Js</p>
                                 <p>65%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-8/12 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -53,17 +53,17 @@ const MySkill = () => {
                                 <p>Mongo DB</p>
                                 <p>85%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-10/12 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
                             <div className="skill__detail flex justify-between">
                                 <p>My SQL</p>
-                                <p>85%</p>
+                                <p>90%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -71,8 +71,8 @@ const MySkill = () => {
                                 <p>WordPress</p>
                                 <p>80%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -80,8 +80,8 @@ const MySkill = () => {
                                 <p>Tailwind CSS</p>
                                 <p>90%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -89,8 +89,8 @@ const MySkill = () => {
                                 <p>Bootstrap</p>
                                 <p>90%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -98,8 +98,8 @@ const MySkill = () => {
                                 <p>PhotoShop</p>
                                 <p>80%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -107,8 +107,8 @@ const MySkill = () => {
                                 <p>Adobe XD</p>
                                 <p>75%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -116,8 +116,8 @@ const MySkill = () => {
                                 <p>Figma</p>
                                 <p>60%</p>
                             </div>
-                            <div className="progress__bar">
-                                <Progress value={70} color="blue" />
+                            <div className="relative w-full bg-gray-200 rounded">
+                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue"></div>
                             </div>
                         </div>
                     </div>

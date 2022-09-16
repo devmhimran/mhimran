@@ -1,74 +1,31 @@
-import React from 'react';
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Tooltip,
-    IconButton,
-    Chip 
-} from "@material-tailwind/react";
-import { BsCodeSquare } from 'react-icons/bs';
-import { AiFillGithub } from 'react-icons/ai';
+import React, { useState } from 'react';
+
+
+import { useEffect } from 'react';
+import PortfolioItem from './PortfolioItem';
 
 const Portfolio = () => {
-
+    const [portfolio, setPortfolio] = useState([]);
+    useEffect(()=>{
+        fetch('https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/devmhimran.json')
+        .then(res => res.json())
+        .then(data => setPortfolio(data))
+    },[]);
+    console.log(portfolio)
     return (
         <div className='portfolio bg-sky-700' id='portfolio'>
             <div className="container mx-auto">
                 <div className="portfolio__main max-w-screen-xl mx-auto lg:py-24 md:py-16 py-16">
                     <h1 className='text-3xl lg:text-5xl font-bold mb-12 lg:mb-16 text-center lg:text-left'>Portfolio</h1>
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-center">
-                        <Card className="w-96 shadow-white border border-gray-200 rounded-lg">
-                            {/* <CardHeader className="h-80">
-                                <img src="https://devmhimran.webzoogoal.com/wp-content/uploads/2022/06/find-tools-img-1024x719.png" alt="" />
-                            </CardHeader> */}
-                            <img  className='rounded-t-lg' src="https://devmhimran.webzoogoal.com/wp-content/uploads/2022/06/find-tools-img-1024x719.png" alt="" />
-                            <CardBody className="text-center">
-                                <Typography variant="h4" color="blue-gray" className="mb-2">
-                                    MoboPedia
-                                </Typography>
-                                <p>A CRUD Application to store your contact phone numbers, everything at one place</p>
-                                <div className="links mt-4">
-                                    <a href="https://www.youtube.com/watch?v=nTxNtTmPq8A">
-                                        <span className='mr-3'>
-                                            <IconButton >
-                                                <div className="text-xl">
-                                                    <BsCodeSquare></BsCodeSquare>
-                                                </div>
-                                            </IconButton>
-                                        </span>
-                                    </a>
-                                    <a href="https://www.youtube.com/watch?v=nTxNtTmPq8A">
-                                        <span className='mr-3'>
-                                            <IconButton color='gray-900'>
-                                                <div className="text-xl">
-                                                    <AiFillGithub></AiFillGithub>
-                                                </div>
-                                            </IconButton>
-                                        </span>
-                                    </a>
-                                    <a href="https://www.youtube.com/watch?v=nTxNtTmPq8A">
-                                        <span className='mr-3'>
-                                            <IconButton color='gray-900'>
-                                                <div className="text-xl">
-                                                    <AiFillGithub></AiFillGithub>
-                                                </div>
-                                            </IconButton>
-                                        </span>
-                                    </a>
-                                </div>
-                            </CardBody>
-                            <CardFooter divider className="flex items-center justify-between py-3">
-                                <Chip color="blue" value="blue" variant="outlined"/>
-                            </CardFooter>
-                        </Card>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-16 justify-center">
+                        {
+                            portfolio.map(portfolioData => <PortfolioItem key={portfolioData.id} portfolioData={portfolioData}></PortfolioItem>)
+                        }
                     </div>
                 </div>
 
             </div>
-        </div>
+        </div >
     );
 };
 

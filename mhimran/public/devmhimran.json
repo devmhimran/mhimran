@@ -1,0 +1,102 @@
+[
+    {
+      "id": "1",
+      "name": "Find Tools",
+      "description": "A tool Manufacturing website, based on e-commerce ",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-find-tools.png",
+      "liveSite": "https://find-tools-92071.web.app/",
+      "clientSide": "https://github.com/devmhimran/find-tools-client",
+      "serverSide": "https://github.com/devmhimran/find-tools-server",
+      "technology": "JS, CSS, Tailwind, Daisy UI, React Router, Firebase Hook, Firebase, Node JS, Express Js, MongoDB"
+    },
+    {
+      "id": "2",
+      "name": "Grocery Shop",
+      "description": "It is a grocery inventory, based on inventory management",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-grocery-shop.png",
+      "liveSite": "https://grocery-shop-4df4d.web.app/",
+      "clientSide": "https://github.com/devmhimran/grocery-shop-client",
+      "serverSide": "https://github.com/devmhimran/grocery-shop-server",
+      "technology": "JS, CSS, React Bootstrap, React Router, Firebase Hook, Firebase, Node JS, Express Js, MongoDB"
+    },
+    {
+      "id": "3",
+      "name": "Wedding Ultra Shots",
+      "description": "It is a Wedding photography booking website, based on booking or purchase",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-wedding-ultrashots.png",
+      "liveSite": "https://wedding-ultra-shots.web.app/",
+      "clientSide": "https://github.com/devmhimran/wedding-ultra-shots-client",
+      "serverSide": "",
+      "technology": "JS, CSS, React Bootstrap, React Router, Firebase Hook,React Icon, Firebase"
+    },
+    {
+      "id": "4",
+      "name": "News Portal",
+      "description": "It is a News Portal Website, based on news or blog site",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-news-portal.png",
+      "liveSite": "https://news-portal-blog-site.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/news-portal-js",
+      "serverSide": "",
+      "technology": "HTML, JS, CSS, Bootstrap, API, Netlify"
+    },
+    {
+      "id": "5",
+      "name": "E State",
+      "description": "It is a Real State website, based on Real state filter",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-e-state.png",
+      "liveSite": "https://e-state.netlify.app/",
+      "clientSide": "https://github.com/devmhimran/e-state-client",
+      "serverSide": "",
+      "technology": "React JS, React Router, Css, API, TailwindCss, DaisyUi, Netlify"
+    },
+    {
+      "id": "6",
+      "name": "Mobopedia",
+      "description": "It is a phone information website, based on informative website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-mobopedia.jpg",
+      "liveSite": "https://youtu.be/leFpIEXhSV0",
+      "clientSide": "https://github.com/devmhimran/mobo-pedia",
+      "serverSide": "",
+      "technology": "Html, Css, Bulma Css, Authentication, Admin Dashboard, PHP, MySql"
+    },
+    {
+      "id": "7",
+      "name": "Data Visualization Chart",
+      "description": "It is a dashboard data chart, based on data information",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-data-visualization.png",
+      "liveSite": "https://dashboard-visualization-b1b29.web.app/",
+      "clientSide": "https://github.com/devmhimran/data-visualization-dashboard",
+      "serverSide": "https://github.com/devmhimran/data-visualization-server",
+      "technology": "JS, React Js, Metarial Tailwind Css, Firebase, Firebase Hook, Node Js, Express Js, MongoDB"
+    },
+    {
+      "id": "8",
+      "name": "Test Folio",
+      "description": "It is a Portfolio website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-preview-myfolio.jpg",
+      "liveSite": "https://devmhimran.github.io/test-folio/",
+      "clientSide": "https://github.com/devmhimran/test-folio",
+      "serverSide": "",
+      "technology": "Html, Css, Bootstrap, Js, Slick, Font"
+    },
+    {
+      "id": "9",
+      "name": "Rusticrew",
+      "description": "E-commerce Website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-preview-rusticrew.jpg",
+      "liveSite": "https://youtu.be/ZfYOcfHTFrM",
+      "clientSide": "",
+      "serverSide": "",
+      "technology": "Wordpress, Elementor, Elementor Pro, Floating Cart"
+    },
+    {
+      "id": "10",
+      "name": "Grocery Supplement",
+      "description": "E-commerce Website",
+      "thumbnail": "https://raw.githubusercontent.com/devmhimran/dummy-api/main/Devmhimran-Api/Devmhimran-image/devmhimran-grocery-supplement.jpg",
+      "liveSite": "https://youtu.be/aW3_af-RPxM",
+      "clientSide": "",
+      "serverSide": "",
+      "technology": "Wordpress, Elementor, Elementor Pro"
+    }
+  ]
