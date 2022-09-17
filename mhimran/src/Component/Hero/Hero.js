@@ -10,8 +10,8 @@ import './hero.css'
 
 const Hero = () => {
     return (
-        <div className="hero__main">
-            <div className='container max-w-screen-xl mx-auto h-screen pt-44 mt-[-115px]'>
+        <div className="hero__main lg:h-screen pt-36 lg:pb-0 pb-8 lg:pt-44 mt-[-115px]">
+            <div className='container max-w-screen-xl mx-auto '>
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 container mx-auto">
                     <div className="hero__left flex lg:items-center justify-center">
                         <div className="hero__left__main lg:text-left md:text-center text-center">
