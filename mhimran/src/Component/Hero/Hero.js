@@ -10,7 +10,7 @@ import './hero.css'
 
 const Hero = () => {
     return (
-        <div className="hero__main lg:h-screen flex items-center py-8 lg:py-0">
+        <div className="hero__main lg:h-[90vh] flex items-center py-8 lg:py-0">
             <div className='container max-w-screen-xl mx-auto '>
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 container mx-auto">
                     <div className="hero__left flex lg:items-center justify-center">

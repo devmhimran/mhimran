@@ -11,7 +11,6 @@ const Portfolio = () => {
         .then(res => res.json())
         .then(data => setPortfolio(data))
     },[]);
-    console.log(portfolio)
     return (
         <div className='portfolio bg-sky-700' id='portfolio'>
             <div className="container mx-auto">
