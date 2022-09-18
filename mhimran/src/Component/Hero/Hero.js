@@ -10,7 +10,7 @@ import './hero.css'
 
 const Hero = () => {
     return (
-        <div className="hero__main lg:h-screen pt-36 lg:pb-0 pb-8 lg:pt-44 mt-[-115px]">
+        <div className="hero__main lg:h-screen flex items-center py-8 lg:py-0">
             <div className='container max-w-screen-xl mx-auto '>
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 container mx-auto">
                     <div className="hero__left flex lg:items-center justify-center">
@@ -33,17 +33,17 @@ const Hero = () => {
                                         <GrFacebookOption className='inline'></GrFacebookOption>
                                     </span>
                                 </a>
-                                <a className='inline mr-3 px-2 py-1.5 text-white rounded-lg bg-black' href="https://www.facebook.com/devmhimran01/">
+                                <a className='inline mr-3 px-2 py-1.5 text-white rounded-lg bg-black' href="https://github.com/devmhimran">
                                     <span className='text-xl'>
                                         <AiFillGithub className='inline'></AiFillGithub>
                                     </span>
                                 </a>
-                                <a className='inline mr-3 px-2 py-1.5 text-white bg-[#2155CD] rounded-lg' href="https://www.facebook.com/devmhimran01/">
+                                <a className='inline mr-3 px-2 py-1.5 text-white bg-[#2155CD] rounded-lg' href="https://www.linkedin.com/in/devmhimran/">
                                     <span className='text-xl'>
                                         <FaLinkedinIn className='inline'></FaLinkedinIn>
                                     </span>
                                 </a>
-                                <a className='inline mr-3 px-2 py-1.5 text-white bg-[#2FA4FF] rounded-lg' href="https://www.facebook.com/devmhimran01/">
+                                <a className='inline mr-3 px-2 py-1.5 text-white bg-[#2FA4FF] rounded-lg ' href="https://twitter.com/devmhimran">
                                     <span className='text-xl'>
                                         <BsTwitter className='inline'></BsTwitter>
                                     </span>

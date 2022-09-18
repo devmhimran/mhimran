@@ -29,7 +29,7 @@ body {
 
 }
 .hero__main,.contact{
-  background-image: url('./Component/Assets/bg-img.png');
+  background-image: url('./Component/Assets/devmhimran-bg-image-01.png');
   background-repeat: no-repeat;
 }
 code {
@@ -39,7 +39,7 @@ code {
 .shim-blue {
   position: relative;
   overflow: hidden;
-  background-color: #262524;
+  /* background-color: #262524; */
 }
 .shim-blue::after {
   position: absolute;

@@ -18,7 +18,7 @@ const MySkill = () => {
                                 <p>75%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue bg-[#47B5FF]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -27,7 +27,7 @@ const MySkill = () => {
                                 <p>80%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue bg-[#5584AC]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -36,7 +36,7 @@ const MySkill = () => {
                                 <p>70%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue bg-[#21BF73]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -45,7 +45,7 @@ const MySkill = () => {
                                 <p>65%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-8/12 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-8/12 top-0 h-3 rounded shim-blue bg-[#262524]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -54,7 +54,7 @@ const MySkill = () => {
                                 <p>85%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-10/12 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-10/12 top-0 h-3 rounded shim-blue bg-[#4E9525]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -63,7 +63,7 @@ const MySkill = () => {
                                 <p>90%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue bg-[#FF971D]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -72,7 +72,7 @@ const MySkill = () => {
                                 <p>80%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue bg-[#1C658C]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -81,7 +81,7 @@ const MySkill = () => {
                                 <p>90%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue bg-[#0096FF]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -90,7 +90,7 @@ const MySkill = () => {
                                 <p>90%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-11/12 top-0 h-3 rounded shim-blue bg-[#A85CF9]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -99,7 +99,7 @@ const MySkill = () => {
                                 <p>80%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-4/5 top-0 h-3 rounded shim-blue bg-[#170055]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -108,7 +108,7 @@ const MySkill = () => {
                                 <p>75%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue bg-[#440A67]"></div>
                             </div>
                         </div>
                         <div className="skill__main lg:my-2 md:my-2 sm:my-1">
@@ -117,7 +117,7 @@ const MySkill = () => {
                                 <p>60%</p>
                             </div>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue"></div>
+                                <div  className="absolute w-3/4 top-0 h-3 rounded shim-blue bg-[#EB1D36]"></div>
                             </div>
                         </div>
                     </div>
