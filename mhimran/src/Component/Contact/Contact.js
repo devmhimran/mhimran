@@ -1,6 +1,7 @@
 import { Button, Input, Textarea } from '@material-tailwind/react';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
     const form = useRef();
@@ -11,9 +12,11 @@ const Contact = () => {
         emailjs.sendForm('service_hmo98vn', 'template_zwwodm9', form.current, 'NBm1Am8HA6NeOIEUY')
             .then((result) => {
                 console.log(result.text);
+                toast.success('Successfully Send!')
             }, (error) => {
                 console.log(error.text);
             });
+        e.target.reset();
     };
     return (
         <div id='contact' className='contact'>
@@ -38,20 +41,16 @@ const Contact = () => {
                                 <h3 className='text-xl font-bold'>LinkedIn</h3>
                                 <p>Li/devmhimran</p>
                             </div>
-                            {/* <div className="contact__detail mb-3">
-                                <h3 className='text-xl font-bold'>Address</h3>
-                                <p>Mirpur, Dhaka-1216, Bangladesh</p>
-                            </div> */}
                         </div>
 
                     </div>
                     <div className="contact__right lg:ml-6 ml-0 flex justify-center">
                         <form className='w-10/12' ref={form} onSubmit={sendEmail}>
                             <div className="w-full lg:w-11/12 my-5">
-                                <Input className='border-black' label="Username" name="user_name" />
+                                <Input className='border-black' label="Your Name" name="user_name" />
                             </div>
                             <div className="w-full lg:w-11/12 my-5">
-                                <Input label="User Email" name="user_email" />
+                                <Input label="Your Email" name="user_email" />
                             </div>
                             <div className="w-full lg:w-11/12 my-5">
                                 <Textarea label="Message" name="message" />
@@ -63,6 +62,10 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+            />
         </div>
     );
 };
