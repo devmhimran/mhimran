@@ -12,12 +12,19 @@
   background-image: linear-gradient(#262524, #262524);
   border-radius: 10px;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 2px grey; 
   border-radius: 10px;
+} */
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #8cdae4);
+  border-radius: 6px;
 }
 body {
   margin: 0;
