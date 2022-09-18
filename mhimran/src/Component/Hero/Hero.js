@@ -27,17 +27,29 @@ const Hero = () => {
                                     <p className='text-gray-900 lg:inline block my-1 lg:my-0'>Computer Engineer</p>
                                 </div>
                             </div>
-                            <div className="social mt-4">
-                                <a href="https://www.facebook.com/devmhimran01/">
-                                    <span className='mr-3'>
-                                        <IconButton color="green">
-                                            <div className='text-2xl'>
-                                                <GrFacebookOption></GrFacebookOption>
-                                            </div>
-                                        </IconButton>
+                            <div className="social mt-5">
+                                <a className='inline mr-3 px-2 py-1.5 text-white bg-[#1363DF] rounded-lg' href="https://www.facebook.com/devmhimran01/">
+                                    <span className='text-xl'>
+                                        <GrFacebookOption className='inline'></GrFacebookOption>
                                     </span>
                                 </a>
-                                <a href="https://github.com/devmhimran">
+                                <a className='inline mr-3 px-2 py-1.5 text-white rounded-lg bg-black' href="https://www.facebook.com/devmhimran01/">
+                                    <span className='text-xl'>
+                                        <AiFillGithub className='inline'></AiFillGithub>
+                                    </span>
+                                </a>
+                                <a className='inline mr-3 px-2 py-1.5 text-white bg-[#2155CD] rounded-lg' href="https://www.facebook.com/devmhimran01/">
+                                    <span className='text-xl'>
+                                        <FaLinkedinIn className='inline'></FaLinkedinIn>
+                                    </span>
+                                </a>
+                                <a className='inline mr-3 px-2 py-1.5 text-white bg-[#2FA4FF] rounded-lg' href="https://www.facebook.com/devmhimran01/">
+                                    <span className='text-xl'>
+                                        <BsTwitter className='inline'></BsTwitter>
+                                    </span>
+                                </a>
+                                
+                                {/* <a href="https://github.com/devmhimran">
                                     <span className='mr-3'>
                                         <IconButton color="green">
                                             <div className='text-2xl'>
@@ -63,7 +75,7 @@ const Hero = () => {
                                             </div>
                                         </IconButton>
                                     </span>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>

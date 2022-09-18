@@ -24,7 +24,14 @@ const PortfolioItem = ({ portfolioData }) => {
                 </Typography>
                 <p>{description}</p>
                 <div className="links mt-4">
-                    <a href={liveSite} target="_blank">
+                    <button className='inline mr-3 py-0.5 px-2.5 text-white bg-[#47B5FF] hover:bg-[#059bff] rounded-lg duration-300 ease-in-out'>
+                        <a className='text-sm' href="#">Live</a>
+                    </button>
+                    {/* <a className='inline mr-3 py-0.5 p-1.5 text-white bg-[#47B5FF]  rounded-lg border-gray-800 hover:bg-gray-800 hover:text-white duration-300 ease-in-out' href="https://www.facebook.com/devmhimran01/">
+                        <span className='text-xs mt-0 leading-none'>Client</span>
+                    </a> */}
+
+                    {/* <a href={liveSite} target="_blank">
                         <span className='mr-3'>
                             <IconButton >
                                 <div className="text-xl">
@@ -32,11 +39,14 @@ const PortfolioItem = ({ portfolioData }) => {
                                 </div>
                             </IconButton>
                         </span>
-                    </a>
+                    </a> */}
                     {
                         clientSide ?
                             <>
-                                <a href={clientSide} target="_blank">
+                                <button className='inline mr-3 py-0.5 px-2.5 text-white bg-[#00AFC1] hover:bg-[#00cae0] rounded-lg duration-300 ease-in-out'>
+                                    <a className='text-sm' href="#">Client</a>
+                                </button>
+                                {/* <a href={clientSide} target="_blank">
                                     <span className='mr-3'>
                                         <IconButton  >
                                             <div className="text-xl">
@@ -44,12 +54,15 @@ const PortfolioItem = ({ portfolioData }) => {
                                             </div>
                                         </IconButton>
                                     </span>
-                                </a>
-                            </>: ''
+                                </a> */}
+                            </> : ''
                     }
                     {
                         serverSide ? <>
-                            <a href={serverSide} target="_blank">
+                            <button className='inline mr-3 py-0.5 px-2.5 text-white bg-[#345B63] hover:bg-[#467b86] rounded-lg duration-300 ease-in-out'>
+                                <a className='text-sm' href="#">Server</a>
+                            </button>
+                            {/* <a href={serverSide} target="_blank">
                                 <span className='mr-3'>
                                     <IconButton  >
                                         <div className="text-xl">
@@ -57,7 +70,7 @@ const PortfolioItem = ({ portfolioData }) => {
                                         </div>
                                     </IconButton>
                                 </span>
-                            </a>
+                            </a> */}
                         </> : ''
                     }
                 </div>
