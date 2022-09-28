@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import devmhimranLogo from '../Assets/devmhimran-logo.png';
+import { BsSun } from 'react-icons/bs';
 
 const Navbar = () => {
     const navLink = <>
@@ -28,7 +29,8 @@ const Navbar = () => {
             <div className="navbar-end hidden text-lg lg:flex">
                 <ul className="menu menu-horizontal p-0">
                     {navLink}
-                </ul>              
+                </ul>
+                <span><BsSun></BsSun></span>              
             </div>
         </div>
     );

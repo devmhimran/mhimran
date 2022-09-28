@@ -10,9 +10,12 @@ import {
 import { Link } from 'react-router-dom';
 import devMhImranLogo from '../Assets/devmhimran-logo-dark.png';
 import devmhimranResume from '../Assets/mahmud-hasan-resume.pdf';
+import { BsSun } from 'react-icons/bs';
+import { HiOutlineMoon } from 'react-icons/hi';
 
 const NavMenu = () => {
     const [openNav, setOpenNav] = useState(false);
+    const [icon, setIcon] = useState(false);
 
     useEffect(() => {
         window.addEventListener(
@@ -25,7 +28,7 @@ const NavMenu = () => {
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <Typography
                 as="li"
-                 
+
                 color="blue-gray"
                 className="p-1 font-normal"
             >
@@ -33,7 +36,7 @@ const NavMenu = () => {
             </Typography>
             <Typography
                 as="li"
-                 
+
                 color="blue-gray"
                 className="p-1 font-normal"
             >
@@ -41,7 +44,7 @@ const NavMenu = () => {
             </Typography>
             <Typography
                 as="li"
-                 
+
                 color="blue-gray"
                 className="p-1 font-normal"
             >
@@ -49,7 +52,7 @@ const NavMenu = () => {
             </Typography>
             <Typography
                 as="li"
-                 
+
                 color="blue-gray"
                 className="p-1 font-normal"
             >
@@ -78,10 +81,13 @@ const NavMenu = () => {
                         <span><img className='lg:w-36 md:w-32 w-32' src={devMhImranLogo} alt="devmhimran-logo" /></span>
                     </Typography>
                     <div className="hidden lg:block">{navList}</div>
-                    <a className='hidden lg:inline-block border-2 border-[#262524] w-24 text-center py-1 rounded-md text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
-                    {/* <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-                        <a href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
-                    </Button> */}
+                    <div className='flex items-center'>
+                        <a className='hidden lg:inline-block border-2 border-[#262524] w-24 text-center py-1 rounded-md text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
+                        {
+                            icon ? <span onClick={() => setIcon(!icon)}><HiOutlineMoon className='ml-3 text-xl cursor-pointer'></HiOutlineMoon></span> :
+                                <span onClick={() => setIcon(!icon)}><BsSun className='ml-3 text-xl cursor-pointer'></BsSun></span>
+                        }
+                    </div>
                     <IconButton
                         variant="text"
                         className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -120,12 +126,17 @@ const NavMenu = () => {
                         )}
                     </IconButton>
                 </div>
-                <MobileNav open={openNav}>
+                <MobileNav open={openNav} className='fit'>
                     {navList}
-                    <a className='lg:hidden inline-block border-2 border-[#262524] w-full lg:w-full text-center py-1 rounded-md text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
-                    {/* <Button variant="gradient" size="sm" fullWidth className="mb-2" to="../Assets/mahmud-hasan-resume.pdf" target="_blank" download>
-                        <a href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
-                    </Button> */}
+                    {/* <a className='lg:hidden inline-block border-2 border-[#262524] w-full lg:w-full text-center py-1 rounded-md text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a> */}
+
+                    <div className=''>
+                        {
+                            icon ? <span onClick={() => setIcon(!icon)}><HiOutlineMoon className='ml-3 text-xl text-black my-3 cursor-pointer'></HiOutlineMoon></span> :
+                                <span onClick={() => setIcon(!icon)}><BsSun className='ml-3 text-xl text-black my-3 cursor-pointer'></BsSun></span>
+                        }
+                        <a className='lg:hidden inline-block border-2 border-[#262524] w-full lg:w-full text-center py-1 rounded-md text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
+                    </div>
                 </MobileNav>
             </Navbar>
         </div>
