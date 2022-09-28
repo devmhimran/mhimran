@@ -17,7 +17,7 @@ const Home = () => {
             <Wordpress></Wordpress>
             <Portfolio></Portfolio>
             <Contact></Contact>
-            <hr />
+            <hr className='dark:text-gray-400' />
             <Footer></Footer>
         </div>
     );

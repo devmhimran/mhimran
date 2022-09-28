@@ -99,8 +99,8 @@ const NavMenu = () => {
                     <div className='flex items-center'>
                         <a className='hidden lg:inline-block button__main' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
                         {
-                            icon ? <span onClick={handleTheme}><HiOutlineMoon className='ml-3 text-xl cursor-pointer dark:text-gray-400'></HiOutlineMoon></span> :
-                                <span onClick={handleTheme}><BsSun className='ml-3 text-xl cursor-pointer'></BsSun></span>
+                            icon ? <span onClick={handleTheme}><HiOutlineMoon className='ml-3 text-xl cursor-pointer dark:text-gray-400 hidden lg:inline-block'></HiOutlineMoon></span> :
+                                <span onClick={handleTheme}><BsSun className='ml-3 text-xl cursor-pointer hidden lg:inline-block'></BsSun></span>
                         }
                     </div>
                     <IconButton
@@ -113,7 +113,7 @@ const NavMenu = () => {
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
-                                className="h-6 w-6"
+                                className="h-6 w-6 dark:text-gray-400"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
                                 strokeWidth={2}
@@ -127,7 +127,7 @@ const NavMenu = () => {
                         ) : (
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
+                                className="h-6 w-6 dark:text-gray-400"
                                 fill="none"
                                 stroke="currentColor"
                                 strokeWidth={2}
@@ -147,10 +147,10 @@ const NavMenu = () => {
 
                     <div className=''>
                         {
-                            icon ? <span onClick={() => setIcon(!icon)}><HiOutlineMoon className='ml-3 text-xl text-black my-3 cursor-pointer'></HiOutlineMoon></span> :
-                                <span onClick={() => setIcon(!icon)}><BsSun className='ml-3 text-xl text-black my-3 cursor-pointer'></BsSun></span>
+                            icon ? <span onClick={handleTheme}><HiOutlineMoon className='ml-3 text-xl text-black my-3 cursor-pointer dark:text-gray-400'></HiOutlineMoon></span> :
+                                <span onClick={handleTheme}><BsSun className='ml-3 text-xl text-black my-3 cursor-pointer dark:text-gray-400'></BsSun></span>
                         }
-                        <a className='lg:hidden inline-block border-2 border-[#262524] w-full lg:w-full text-center py-1 rounded-md text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
+                        <a className='lg:hidden inline-block button__main w-full' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
                     </div>
                 </MobileNav>
             </Navbar>

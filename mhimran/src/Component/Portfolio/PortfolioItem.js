@@ -24,26 +24,13 @@ const PortfolioItem = ({ portfolioData }) => {
                 </Typography>
                 <p className='dark:text-gray-400'>{description}</p>
                 <div className="links mt-4">
-                    <button className='inline mr-3 py-1 px-2.5 text-white bg-[#47B5FF] hover:bg-[#059bff] rounded-lg duration-300 ease-in-out'>
+                    <button className='inline mr-3 py-1 px-2.5 text-blue-600 bg-blue-400/20 hover:bg-blue-400/40 rounded-lg duration-300 ease-in-out'>
                         <a className='text-sm flex items-center' href={liveSite} target="_blank"><RiComputerLine className='inline mr-1'></RiComputerLine>Live</a>
                     </button>
-                    {/* <a className='inline mr-3 py-0.5 p-1.5 text-white bg-[#47B5FF]  rounded-lg border-gray-800 hover:bg-gray-800 hover:text-white duration-300 ease-in-out' href="https://www.facebook.com/devmhimran01/">
-                        <span className='text-xs mt-0 leading-none'>Client</span>
-                    </a> */}
-
-                    {/* <a href={liveSite} target="_blank">
-                        <span className='mr-3'>
-                            <IconButton >
-                                <div className="text-xl">
-                                    <RiComputerLine></RiComputerLine>
-                                </div>
-                            </IconButton>
-                        </span>
-                    </a> */}
                     {
                         clientSide ?
                             <>
-                                <button className='inline mr-3 py-1 px-2.5 text-white bg-[#00AFC1] hover:bg-[#00cae0] rounded-lg duration-300 ease-in-out'>
+                                <button className='inline mr-3 py-1 px-2.5 text-green-600 bg-green-400/20 hover:bg-green-400/40 rounded-lg duration-300 ease-in-out'>
                                     <a className='text-sm flex items-center' href={clientSide} target="_blank"><AiFillGithub className='inline mr-1'></AiFillGithub>Client</a>
                                 </button>
                                 {/* <a href={clientSide} target="_blank">
@@ -59,7 +46,7 @@ const PortfolioItem = ({ portfolioData }) => {
                     }
                     {
                         serverSide ? <>
-                            <button className='inline mr-3 py-1 px-2.5 text-white bg-[#345B63] hover:bg-[#467b86] rounded-lg duration-300 ease-in-out'>
+                            <button className='inline mr-3 py-1 px-2.5 text-teal-600 bg-teal-400/20 hover:bg-teal-400/40 rounded-lg duration-300 ease-in-out'>
                                 <a className='text-sm flex items-center' href={serverSide} target="_blank"><AiFillGithub className='inline mr-1'></AiFillGithub>Server</a>
                             </button>
                             {/* <a href={serverSide} target="_blank">
