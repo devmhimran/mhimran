@@ -16,13 +16,13 @@ import {
 const PortfolioItem = ({ portfolioData }) => {
     const { name, thumbnail, description, liveSite, clientSide, serverSide, technology } = portfolioData;
     return (
-        <Card className="shadow-white border border-gray-200 rounded-lg">
+        <Card className="shadow-white dark:shadow-[#1f1f1f] border border-gray-200 dark:border-gray-800 dark:bg-[#1f1f1f] rounded-lg">
             <img className='rounded-t-lg' src={thumbnail} alt="" />
-            <CardBody className="text-center">
-                <Typography variant="h4" color="blue-gray" className="mb-2">
+            <CardBody className="text-center dark:bg-[#1f1f1f]">
+                <Typography variant="h4" color="blue-gray" className="mb-2 dark:text-white">
                     {name}
                 </Typography>
-                <p>{description}</p>
+                <p className='dark:text-gray-400'>{description}</p>
                 <div className="links mt-4">
                     <button className='inline mr-3 py-1 px-2.5 text-white bg-[#47B5FF] hover:bg-[#059bff] rounded-lg duration-300 ease-in-out'>
                         <a className='text-sm flex items-center' href={liveSite} target="_blank"><RiComputerLine className='inline mr-1'></RiComputerLine>Live</a>
@@ -75,11 +75,11 @@ const PortfolioItem = ({ portfolioData }) => {
                     }
                 </div>
             </CardBody>
-            <CardFooter divider className="flex items-center justify-between py-3">
+            <CardFooter divider className="flex items-center justify-between py-3 dark:bg-[#1f1f1f] dark:border-t-[#262524]">
                 <div className="technology">
-                    <p className='font-semibold text-black'>Technology :</p>
+                    <p className='font-semibold text-black dark:text-white'>Technology :</p>
                     <span>
-                        <p>{technology}</p>
+                        <p className='dark:text-gray-400'>{technology}</p>
                     </span>
                 </div>
             </CardFooter>

@@ -36,7 +36,7 @@ body {
 
 }
 .hero__main,.contact{
-  background-image: url('./Component/Assets/devmhimran-bg-image-01.png');
+  background-image: url('./Component/Assets/devmhimran-bg-image-02.png');
   background-repeat: no-repeat;
 }
 code {
@@ -69,4 +69,14 @@ code {
   -webkit-text-fill-color: white; 
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+.hero__area__dark{
+  background: none;
+}
+.hero__area {
+  @apply hero__main lg:h-[90vh] flex items-center py-8 lg:py-0
+}
+.button__main{
+  @apply border border-[#262524] w-24 text-center py-1 rounded text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200
+  dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-400 dark:hover:text-[#1f1f1f]
 }

@@ -16,6 +16,15 @@ import { HiOutlineMoon } from 'react-icons/hi';
 const NavMenu = () => {
     const [openNav, setOpenNav] = useState(false);
     const [icon, setIcon] = useState(false);
+    const [theme, setTheme] = useState('light');
+    
+    useEffect(()=>{
+        if(theme === 'dark'){
+            document.documentElement.classList.add('dark');
+        }else{
+            document.documentElement.classList.remove('dark');
+        }
+    },[theme]);
 
     useEffect(() => {
         window.addEventListener(
@@ -23,6 +32,12 @@ const NavMenu = () => {
             () => window.innerWidth >= 960 && setOpenNav(false)
         );
     }, []);
+
+    const handleTheme = () =>{
+        setTheme(theme === 'light' ? 'dark' : 'light');
+        console.log(theme)
+        setIcon(!icon);
+    }
 
     const navList = (
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -32,7 +47,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href='#skill' className="flex items-center">Skill</a>
+                <a href='#skill' className="flex items-center dark:text-gray-400">Skill</a>
             </Typography>
             <Typography
                 as="li"
@@ -40,7 +55,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href='#about' className="flex items-center">About</a>
+                <a href='#about' className="flex items-center dark:text-gray-400">About</a>
             </Typography>
             <Typography
                 as="li"
@@ -48,7 +63,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href='#portfolio' className="flex items-center">Portfolio</a>
+                <a href='#portfolio' className="flex items-center dark:text-gray-400">Portfolio</a>
             </Typography>
             <Typography
                 as="li"
@@ -56,7 +71,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href='#contact' className="flex items-center">Contact</a>
+                <a href='#contact' className="flex items-center dark:text-gray-400">Contact</a>
             </Typography>
             {/* <Typography
                 as="li"
@@ -70,7 +85,7 @@ const NavMenu = () => {
     );
     return (
         <div className='py-4'>
-            <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
+            <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 dark:bg-[#1f1f1f]">
                 <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"
@@ -78,14 +93,14 @@ const NavMenu = () => {
                         variant="small"
                         className="mr-4 cursor-pointer py-1.5 font-normal"
                     >
-                        <span><img className='lg:w-36 md:w-32 w-32' src={devMhImranLogo} alt="devmhimran-logo" /></span>
+                        <span><img className='lg:w-36 md:w-32 w-32 dark:invert' src={devMhImranLogo} alt="devmhimran-logo" /></span>
                     </Typography>
                     <div className="hidden lg:block">{navList}</div>
                     <div className='flex items-center'>
-                        <a className='hidden lg:inline-block border-2 border-[#262524] w-24 text-center py-1 rounded-md text-[#262524] hover:text-white hover:bg-[#262524] ease-in duration-200' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
+                        <a className='hidden lg:inline-block button__main' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
                         {
-                            icon ? <span onClick={() => setIcon(!icon)}><HiOutlineMoon className='ml-3 text-xl cursor-pointer'></HiOutlineMoon></span> :
-                                <span onClick={() => setIcon(!icon)}><BsSun className='ml-3 text-xl cursor-pointer'></BsSun></span>
+                            icon ? <span onClick={handleTheme}><HiOutlineMoon className='ml-3 text-xl cursor-pointer dark:text-gray-400'></HiOutlineMoon></span> :
+                                <span onClick={handleTheme}><BsSun className='ml-3 text-xl cursor-pointer'></BsSun></span>
                         }
                     </div>
                     <IconButton
