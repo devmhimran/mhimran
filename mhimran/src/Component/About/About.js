@@ -13,7 +13,7 @@ const About = () => {
 
                     <div className="about__heading lg:text-left text-center flex items-center">
                         <div className="about__heading__main dark:text-white">
-                            <h1 className='text-3xl lg:text-5xl font-bold mb-4 lg:mb-6'>About Me</h1>
+                            <h1 className='text-4xl lg:text-5xl font-bold mb-4 lg:mb-6'>About Me</h1>
                             <p className='text-base lg:text-lg text-gray-700 font-light leading-8 p-4 lg:p-0  dark:text-gray-400'>Hi! Myself Mahmud Hasan Imran, I'm a passionate web developer. I develop web applications using MERN Stack Development. My core skill is based on Javascript, React JS, Node Js, PHP, and WordPress and I love to do most things using Javascript and React Js. My vision is to upgrade the UX experience in websites. The most website doesn't have a well-optimized user experience, which is why they lose traffic. I think can solve this problem and I will try to do my best. I love to make solutions using web development. I graduated with a bachelor's degree in Computer Science and Engineering from the Bangladesh University of Business and Technology (BUBT) in Dhaka, Bangladesh in 2022. I'm available for any job opportunity that suits my interest.</p>
                         </div>
                     </div>

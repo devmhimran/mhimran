@@ -16,7 +16,7 @@ const Hero = () => {
                     <div className="hero__left flex lg:items-center justify-center">
                         <div className="hero__left__main lg:text-left md:text-center text-center">
                             <h3 className='text-cyan-500 text-2xl'>Hi, I am</h3>
-                            <h1 className='text-gray-900 lg:text-7xl md:text-5xl text-4xl font-bold dark:text-white'>Mahmud<br></br> Hasan <span className='nick__name'>Imran</span></h1>
+                            <h1 className='text-gray-900 lg:text-7xl md:text-5xl text-5xl font-bold dark:text-white'>Mahmud<br></br> Hasan <span className='nick__name'>Imran</span></h1>
                             <div className="details mt-3">
                                 <h3 className='text-2xl font-semibold text-cyan-500 mb-3 dark:text-white'>Front End Developer</h3>
                                 <div className='lg:text-lg text-base'>

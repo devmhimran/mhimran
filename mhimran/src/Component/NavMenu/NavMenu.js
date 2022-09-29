@@ -35,7 +35,6 @@ const NavMenu = () => {
 
     const handleTheme = () =>{
         setTheme(theme === 'light' ? 'dark' : 'light');
-        console.log(theme)
         setIcon(!icon);
     }
 
