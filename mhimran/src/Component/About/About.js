@@ -1,5 +1,5 @@
 import React from 'react';
-import devMhImranImage from '../Assets/devmhimran-image.jpg'
+import devMhImranImage from '../Assets/devmhimran-about-image.jpg'
 
 const About = () => {
     return (
@@ -8,7 +8,7 @@ const About = () => {
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                     
                     <div className="about__image">
-                        <img className='lg:w-10/12 w-96 mx-auto lg:mr-auto rounded-lg' src={devMhImranImage} alt="" />
+                        <img className='lg:w-10/12 w-96 mx-auto lg:mr-auto rounded-lg' src={devMhImranImage} alt="devmhimran-about-image" />
                     </div>
 
                     <div className="about__heading lg:text-left text-center flex items-center">
