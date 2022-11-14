@@ -7,6 +7,7 @@ import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import Wordpress from '../Wordpress/Wordpress';
+import Instagram from '../Instagram/Instagram';
 const Home = () => {
     return (
         <div className=''>
@@ -16,6 +17,7 @@ const Home = () => {
             <MySkill></MySkill>
             <Wordpress></Wordpress>
             <Portfolio></Portfolio>
+            <Instagram></Instagram>
             <Contact></Contact>
             <hr className='dark:text-gray-400' />
             <Footer></Footer>
