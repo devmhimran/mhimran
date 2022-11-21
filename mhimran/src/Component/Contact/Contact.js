@@ -47,13 +47,13 @@ const Contact = () => {
                     <div className="contact__right lg:ml-6 ml-0 flex justify-center">
                         <form className='w-10/12' ref={form} onSubmit={sendEmail}>
                             <div className="w-full lg:w-11/12 my-5">
-                                <Input className='dark:text-gray-400' label="Your Name" name="user_name" />
+                                <Input className='dark:text-gray-400' label="Your Name" name="user_name" required/>
                             </div>
                             <div className="w-full lg:w-11/12 my-5">
-                                <Input label="Your Email" className='dark:text-gray-400' name="user_email" />
+                                <Input label="Your Email" className='dark:text-gray-400' name="user_email" required/>
                             </div>
                             <div className="w-full lg:w-11/12 my-5">
-                                <Textarea label="Message" className='dark:text-gray-400' name="message" />
+                                <Textarea label="Message" className='dark:text-gray-400' name="message" required />
                             </div>
                             <div className="w-full lg:w-11/12 my-3">
                                 <button className='button__main' type='submit'>Send</button>
