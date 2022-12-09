@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { useEffect } from 'react';
 import PortfolioItem from './PortfolioItem';

@@ -16,7 +16,7 @@ const Wordpress = () => {
                                 MouseWheel Smooth Scroll, We can upload pre made demo and
                                 we can import demo by one click demo importer</p>
                         </div>
-                        <div className="wordpress__right">
+                        <div className="wordpress__right" data-aos="fade-left">
                             <img className='w-full mb-8 lg:mb-0 rounded' src={whiteCanvas} alt="" />
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const Wordpress = () => {
             <div className="wordpress__theme">
                 <div className="container max-w-screen-xl mx-auto lg:py-24 md:py-16 py-16">
                     <div className="block lg:flex items-center mx-4 lg:mx-0">
-                    <div className="wordpress__left">
+                    <div className="wordpress__left"  data-aos="fade-right">
                             <img className='w-full mb-8 lg:mb-0 rounded' src={elePack} alt="" />
                         </div>
                         <div className="wordpress__right ml-0 lg:ml-16 text-center lg:text-left mb-6 lg:mb-0">      

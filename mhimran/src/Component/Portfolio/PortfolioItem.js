@@ -13,11 +13,19 @@ import {
     Chip,
     Button
 } from "@material-tailwind/react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 const PortfolioItem = ({ portfolioData }) => {
     const { name, thumbnail, description, liveSite, clientSide, serverSide, technology } = portfolioData;
     return (
         <Card className="shadow-white dark:shadow-[#1f1f1f] border border-gray-200 dark:border-gray-800 dark:bg-[#1f1f1f] rounded-lg">
-            <img className='rounded-t-lg' src={thumbnail} alt="" />
+            <LazyLoadImage
+                src={thumbnail}
+                effect="blur"
+                height="500"
+                width="400"
+            //  loading='eager'
+            />
+            {/* <img className='rounded-t-lg' src={thumbnail} alt="" /> */}
             <CardBody className="text-center dark:bg-[#1f1f1f]">
                 <Typography variant="h4" color="blue-gray" className="mb-2 dark:text-white">
                     {name}

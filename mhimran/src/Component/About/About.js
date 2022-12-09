@@ -7,7 +7,7 @@ const About = () => {
             <div className="about__main max-w-screen-xl mx-auto lg:py-24 md:py-16 py-16">
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                     
-                    <div className="about__image">
+                    <div className="about__image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <img className='lg:w-10/12 w-96 mx-auto lg:mr-auto rounded-lg' src={devMhImranImage} alt="devmhimran-about-image" />
                     </div>
 
