@@ -4,14 +4,9 @@ import { AiFillGithub } from 'react-icons/ai';
 import { FaReact } from 'react-icons/fa';
 import {
     Card,
-    CardHeader,
     CardBody,
     CardFooter,
     Typography,
-    Tooltip,
-    IconButton,
-    Chip,
-    Button
 } from "@material-tailwind/react";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 const PortfolioItem = ({ portfolioData }) => {
