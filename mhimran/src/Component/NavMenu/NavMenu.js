@@ -46,7 +46,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href='#skill' className="flex items-center dark:text-gray-400">Skill</a>
+                <a href='#skill' className="flex items-center dark:text-gray-400 inter">Skill</a>
             </Typography>
             <Typography
                 as="li"
@@ -54,7 +54,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href='#about' className="flex items-center dark:text-gray-400">About</a>
+                <a href='#about' className="flex items-center dark:text-gray-400 inter">About</a>
             </Typography>
             <Typography
                 as="li"
@@ -62,7 +62,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href='#portfolio' className="flex items-center dark:text-gray-400">Portfolio</a>
+                <a href='#portfolio' className="flex items-center dark:text-gray-400 inter">Portfolio</a>
             </Typography>
             <Typography
                 as="li"
@@ -70,7 +70,7 @@ const NavMenu = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href='#contact' className="flex items-center dark:text-gray-400">Contact</a>
+                <a href='#contact' className="flex items-center dark:text-gray-400 inter">Contact</a>
             </Typography>
             {/* <Typography
                 as="li"
@@ -96,7 +96,7 @@ const NavMenu = () => {
                     </Typography>
                     <div className="hidden lg:block">{navList}</div>
                     <div className='flex items-center'>
-                        <a className='hidden lg:inline-block button__main' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
+                        <a className='hidden lg:inline-block button__main inter' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
                         {
                             icon ? <span onClick={handleTheme}><HiOutlineMoon className='ml-3 text-xl cursor-pointer dark:text-gray-400 hidden lg:inline-block'></HiOutlineMoon></span> :
                                 <span onClick={handleTheme}><BsSun className='ml-3 text-xl cursor-pointer hidden lg:inline-block'></BsSun></span>
@@ -149,7 +149,7 @@ const NavMenu = () => {
                             icon ? <span onClick={handleTheme}><HiOutlineMoon className='ml-3 text-xl text-black my-3 cursor-pointer dark:text-gray-400'></HiOutlineMoon></span> :
                                 <span onClick={handleTheme}><BsSun className='ml-3 text-xl text-black my-3 cursor-pointer dark:text-gray-400'></BsSun></span>
                         }
-                        <a className='lg:hidden inline-block button__main w-full' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
+                        <a className='lg:hidden inline-block button__main w-full inter' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
                     </div>
                 </MobileNav>
             </Navbar>

@@ -27,19 +27,19 @@ const PortfolioItem = ({ portfolioData }) => {
             />
             {/* <img className='rounded-t-lg' src={thumbnail} alt="" /> */}
             <CardBody className="text-center dark:bg-[#1f1f1f]">
-                <Typography variant="h4" color="blue-gray" className="mb-2 dark:text-white">
+                <Typography variant="h4" color="blue-gray" className="mb-2 dark:text-white text-xl montserrat font-bold">
                     {name}
                 </Typography>
-                <p className='dark:text-gray-400'>{description}</p>
+                <p className='dark:text-gray-400 inter'>{description}</p>
                 <div className="links mt-4">
                     <button className='inline mr-3 py-1 px-2.5 text-blue-600 bg-blue-400/20 hover:bg-blue-400/40 rounded-lg duration-300 ease-in-out'>
-                        <a className='text-sm flex items-center' href={liveSite} target="_blank"><RiComputerLine className='inline mr-1'></RiComputerLine>Live</a>
+                        <a className='text-sm flex items-center inter' href={liveSite} target="_blank"><RiComputerLine className='inline mr-1'></RiComputerLine>Live</a>
                     </button>
                     {
                         clientSide ?
                             <>
                                 <button className='inline mr-3 py-1 px-2.5 text-green-600 bg-green-400/20 hover:bg-green-400/40 rounded-lg duration-300 ease-in-out'>
-                                    <a className='text-sm flex items-center' href={clientSide} target="_blank"><AiFillGithub className='inline mr-1'></AiFillGithub>Client</a>
+                                    <a className='text-sm flex items-center inter' href={clientSide} target="_blank"><AiFillGithub className='inline mr-1'></AiFillGithub>Client</a>
                                 </button>
                                 {/* <a href={clientSide} target="_blank">
                                     <span className='mr-3'>
@@ -55,7 +55,7 @@ const PortfolioItem = ({ portfolioData }) => {
                     {
                         serverSide ? <>
                             <button className='inline mr-3 py-1 px-2.5 text-teal-600 bg-teal-400/20 hover:bg-teal-400/40 rounded-lg duration-300 ease-in-out'>
-                                <a className='text-sm flex items-center' href={serverSide} target="_blank"><AiFillGithub className='inline mr-1'></AiFillGithub>Server</a>
+                                <a className='text-sm flex items-center inter' href={serverSide} target="_blank"><AiFillGithub className='inline mr-1'></AiFillGithub>Server</a>
                             </button>
                             {/* <a href={serverSide} target="_blank">
                                 <span className='mr-3'>
@@ -72,9 +72,9 @@ const PortfolioItem = ({ portfolioData }) => {
             </CardBody>
             <CardFooter divider className="flex items-center justify-between py-3 dark:bg-[#1f1f1f] dark:border-t-[#262524]">
                 <div className="technology">
-                    <p className='font-semibold text-black dark:text-white'>Technology :</p>
+                    <p className='font-semibold text-black dark:text-white montserrat'>Technology :</p>
                     <span>
-                        <p className='dark:text-gray-400'>{technology}</p>
+                        <p className='dark:text-gray-400 inter'>{technology}</p>
                     </span>
                 </div>
             </CardFooter>

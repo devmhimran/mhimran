@@ -12,7 +12,7 @@ const Instagram = () => {
     return (
         <div className='container mx-auto max-w-screen-xl lg:py-24 md:py-16 py-16'>
             <div className="instagram__heading">
-                <h1 className='text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 lg:text-left text-center dark:text-white'>Instagram</h1>
+                <h1 className='text-3xl lg:text-5xl font-bold mb-4 lg:mb-6 lg:text-left text-center dark:text-white montserrat'>Instagram</h1>
             </div>
             <Marquee speed={50} gradient={false} className='pt-4 rounded-lg' pauseOnClick={true}>
                 {

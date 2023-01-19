@@ -82,15 +82,15 @@ const MySkill = () => {
     ]
     return (
         <div className='container max-w-screen-xl mx-auto lg:py-24 md:py-16 py-16' id='skill'>
-            <h1 className='text-4xl lg:text-5xl font-bold mb-6 lg:text-left text-center dark:text-white'>My Skills</h1>
+            <h1 className='text-4xl lg:text-5xl font-bold mb-6 lg:text-left text-center dark:text-white montserrat'>My Skills</h1>
             <Card className='bg-white dark:bg-[#1F1F1F]'>
                 <CardBody>
                     <div className="skills grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10">
                         {
                             skillData.map(data => <div className="skill__main lg:my-2 md:my-2 sm:my-1">
                                 <div className="skill__detail flex justify-between">
-                                    <p className=" dark:text-gray-400">{data.skillName}</p>
-                                    <p className=" dark:text-gray-400">{data.skillRate}</p>
+                                    <p className=" dark:text-gray-400 montserrat">{data.skillName}</p>
+                                    <p className=" dark:text-gray-400 inter">{data.skillRate}</p>
                                 </div>
                                 <div className="relative w-full bg-gray-200 rounded">
                                     <div className={`absolute ${data.width} top-0 h-3 rounded shim-blue ${data.color}`}></div>
