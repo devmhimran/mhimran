@@ -16,8 +16,8 @@ const Instagram = () => {
             </div>
             <Marquee speed={50} gradient={false} className='pt-4 rounded-lg' pauseOnClick={true}>
                 {
-                    post.map(data =>
-                        <div className='border rounded-lg mx-3'>
+                    post.map((data, index) =>
+                        <div key={index} className='border rounded-lg mx-3'>
                             <a href={data.link}>
                                 <img className='rounded-lg w-96' src={data.thumbnail} alt={data.name} />
                             </a>

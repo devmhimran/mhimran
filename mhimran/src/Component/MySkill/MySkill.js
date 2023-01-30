@@ -87,7 +87,7 @@ const MySkill = () => {
                 <CardBody>
                     <div className="skills grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10">
                         {
-                            skillData.map(data => <div className="skill__main lg:my-2 md:my-2 sm:my-1">
+                            skillData.map((data, index) => <div key={index} className="skill__main lg:my-2 md:my-2 sm:my-1">
                                 <div className="skill__detail flex justify-between">
                                     <p className=" dark:text-gray-400 montserrat">{data.skillName}</p>
                                     <p className=" dark:text-gray-400 inter">{data.skillRate}</p>
