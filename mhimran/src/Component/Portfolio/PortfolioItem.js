@@ -17,7 +17,7 @@ const PortfolioItem = ({ portfolioData }) => {
                 src={thumbnail}
                 effect="blur"
                 height="500"
-                width="400"
+                width="100%"
             //  loading='eager'
             />
             {/* <img className='rounded-t-lg' src={thumbnail} alt="" /> */}
