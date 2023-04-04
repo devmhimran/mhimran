@@ -9,7 +9,7 @@ import {
 } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
 import devMhImranLogo from '../Assets/devmhimran-logo-dark.png';
-import devmhimranResume from '../Assets/mahmud-hasan-resume.pdf';
+import devmhimranResume from '../Assets/Mahmud-Hasan-Web Developer-Resume.pdf';
 import { BsSun } from 'react-icons/bs';
 import { HiOutlineMoon } from 'react-icons/hi';
 
@@ -96,7 +96,7 @@ const NavMenu = () => {
                     </Typography>
                     <div className="hidden lg:block">{navList}</div>
                     <div className='flex items-center'>
-                        <a className='hidden lg:inline-block button__main inter' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
+                        <a className='hidden lg:inline-block button__main inter' href={devmhimranResume} download='Mahmud-Hasan-Web Developer-Resume.pdf'><span>Resume</span></a>
                         {
                             icon ? <span onClick={handleTheme}><HiOutlineMoon className='ml-3 text-xl cursor-pointer dark:text-gray-400 hidden lg:inline-block'></HiOutlineMoon></span> :
                                 <span onClick={handleTheme}><BsSun className='ml-3 text-xl cursor-pointer hidden lg:inline-block'></BsSun></span>
@@ -149,7 +149,7 @@ const NavMenu = () => {
                             icon ? <span onClick={handleTheme}><HiOutlineMoon className='ml-3 text-xl text-black my-3 cursor-pointer dark:text-gray-400'></HiOutlineMoon></span> :
                                 <span onClick={handleTheme}><BsSun className='ml-3 text-xl text-black my-3 cursor-pointer dark:text-gray-400'></BsSun></span>
                         }
-                        <a className='lg:hidden inline-block button__main w-full inter' href={devmhimranResume} download='mahmud-hasan-resume.pdf'><span>Resume</span></a>
+                        <a className='lg:hidden inline-block button__main w-full inter' href={devmhimranResume} download='Mahmud-Hasan-Web Developer-Resume.pdf'><span>Resume</span></a>
                     </div>
                 </MobileNav>
             </Navbar>
