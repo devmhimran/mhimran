@@ -81,7 +81,7 @@ export default function ContactPage() {
           <div>
             <label htmlFor='name'>Name</label>
             <input
-              className='border w-full p-2 rounded-lg bg-[#F8FAFC]'
+              className='border border-gray-300 w-full p-2 rounded-lg bg-[#F8FAFC]'
               type='text'
               name='name'
               id='name'
@@ -90,7 +90,7 @@ export default function ContactPage() {
           <div>
             <label htmlFor='email'>Email</label>
             <input
-              className='border w-full p-2 rounded-lg bg-[#F8FAFC]'
+              className='border border-gray-300 w-full p-2 rounded-lg bg-[#F8FAFC]'
               type='email'
               name='email'
               id='email'
@@ -100,7 +100,7 @@ export default function ContactPage() {
         <div className='space-y-3'>
           <label htmlFor='message'>Message</label>
           <textarea
-            className='border w-full p-2 rounded-lg bg-[#F8FAFC] resize-none h-32'
+            className='border border-gray-300 w-full p-2 rounded-lg bg-[#F8FAFC] resize-none h-32'
             name='message'
             id='message'
           />

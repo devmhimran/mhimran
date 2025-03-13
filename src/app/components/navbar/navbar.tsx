@@ -6,10 +6,10 @@ export default function Navbar() {
     <header className='py-10 flex justify-between items-center max-w-full lg:max-w-[70%] px-4 lg:px-0 mx-auto'>
       <Link href='/'>
         <Image
-          src='/assets/img/dev-mh-imran-site-logo.jpg'
+          src='/assets/img/dev-mh-imran-site-logo.png'
           alt='devmhimran'
           width={150}
-          height={100}
+          height={30}
           className='w-[100px] lg:w-[150px]'
         />
       </Link>
