@@ -15,7 +15,7 @@ export default function Navbar() {
       </Link>
       <div className='flex items-center gap-6 font-semibold text-custom-primary'>
         <Link href='/about'>About</Link>
-        <Link href='/project'>Projects</Link>
+        <Link href='/projects'>Projects</Link>
         <Link href='/contact'>Contact</Link>
       </div>
     </header>
