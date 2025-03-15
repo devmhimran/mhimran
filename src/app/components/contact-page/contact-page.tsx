@@ -41,7 +41,6 @@ export default function ContactPage() {
         )
         .then(
           (result) => {
-            console.log(result.text);
             toast.success('Successfully Send!');
             (e.target as HTMLFormElement).reset();
             setLoading(false);
@@ -53,8 +52,6 @@ export default function ContactPage() {
           }
         );
   };
-
-  console.log({ id: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID });
 
   return (
     <section className='max-w-full lg:max-w-[70%] mx-auto py-14 px-4 lg:px-0 space-y-8'>
