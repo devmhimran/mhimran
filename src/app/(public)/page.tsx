@@ -4,6 +4,8 @@ import { Hero, Portfolio } from '../components';
 import PortfolioCard from '../components/portfolio-card/portfolio-card';
 import { PortfolioCardProps } from '../types/global-types';
 
+export const revalidate = 30;
+
 async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
   const query = `
     *[_type == "portfolio"]| order(_createdAt desc) [0...6] {
