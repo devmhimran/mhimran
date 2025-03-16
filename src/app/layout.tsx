@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import localFont from 'next/font/local';
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 
 import { cn } from './lib/utils';
 
@@ -64,6 +64,9 @@ export default function RootLayout({
       <head>
         <GoogleAnalytics
           gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''}
+        />
+        <GoogleTagManager
+          gtmId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''}
         />
       </head>
       <body
