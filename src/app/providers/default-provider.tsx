@@ -1,5 +1,5 @@
 import { Toaster } from 'sonner';
-import { Navbar } from '../components';
+import { Footer, Navbar } from '../components';
 
 export default function DefaultProvider({
   children,
@@ -8,6 +8,7 @@ export default function DefaultProvider({
     <>
       <Navbar />
       <main>{children}</main>
+      <Footer />
       <Toaster position='top-center' />
     </>
   );
