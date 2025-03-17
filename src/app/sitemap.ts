@@ -1,16 +1,6 @@
-import { Portfolio } from '@/app/components';
-import { PortfolioCardProps } from '@/app/types/global-types';
+import { MetadataRoute } from 'next';
+import { PortfolioCardProps } from './types/global-types';
 import { client } from '@/sanity/lib/client';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Projects | Devmhimran',
-  description: "Explore Mahmud Hasan Imran's projects",
-  robots: {
-    follow: true,
-    index: true,
-  },
-};
 
 export const revalidate = 30;
 
@@ -35,7 +25,13 @@ async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
   }
 }
 
-export default async function Projects() {
-  const portfolioData = await fetchPortfolioData();
-  return <Portfolio portfolioData={portfolioData} />;
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  return [
+    {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 1,
+    },
+  ];
 }

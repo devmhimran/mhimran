@@ -1,5 +1,14 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'About | Devmhimran',
+  description: 'Learn more about Mahmud Hasan Imran',
+  robots: {
+    follow: true,
+    index: true,
+  },
+};
+
 const experiences = [
   {
     img: '/assets/img/tutors-fi-logo.webp',

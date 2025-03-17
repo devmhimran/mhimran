@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
 import './globals.css';
 import localFont from 'next/font/local';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
@@ -15,12 +14,29 @@ export const metadata: Metadata = {
   title: 'Devmhimran -  Software Developer',
   description:
     'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js',
+  keywords: [
+    'Software Developer',
+    'Full Stack Developer',
+    'Software Engineer',
+    'React Developer',
+    'Next.js Developer',
+    'Express.js Developer',
+    'Node.js Developer',
+    'Web Developer',
+    'Frontend Developer',
+    'Backend Developer',
+    'MERN Stack Developer',
+  ],
   twitter: {
     card: 'summary_large_image',
     images: ['/og.jpg'],
     title: 'Devmhimran - Software Developer',
     description:
       'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   openGraph: {
     type: 'website',
@@ -67,6 +83,10 @@ export default function RootLayout({
         />
         <GoogleTagManager
           gtmId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''}
+        />
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body
