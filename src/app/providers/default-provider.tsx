@@ -7,7 +7,7 @@ export default function DefaultProvider({
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className='min-h-screen'>{children}</main>
       <Footer />
       <Toaster position='top-center' />
     </>

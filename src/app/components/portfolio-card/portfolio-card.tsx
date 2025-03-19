@@ -2,6 +2,7 @@
 import { PortfolioCardProps } from '@/app/types/global-types';
 import { PortableText } from '@portabletext/react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PortfolioCard = ({
   title,
@@ -9,21 +10,31 @@ const PortfolioCard = ({
   thumbnailUrl,
   thumbnailAlt,
   live_link,
+  slug,
 }: PortfolioCardProps) => {
   return (
-    <div className='bg-[#F1F5F9] p-3 lg:p-6 rounded-xl'>
-      {thumbnailUrl && (
-        <Image
-          className='w-full rounded-lg'
-          src={thumbnailUrl}
-          alt={thumbnailAlt || 'Portfolio thumbnail'}
-          width={350}
-          height={200}
-        />
-      )}
-      <div className='space-y-2 mt-2'>
-        <h3 className='text-xl font-semibold'>{title}</h3>
-        <div>
+    <Link href={`/projects/${slug}`}>
+      <div className='bg-[#F1F5F9] p-3 lg:p-6 rounded-xl'>
+        {thumbnailUrl ? (
+          <Image
+            className='w-full rounded-lg'
+            src={thumbnailUrl}
+            alt={title || 'Portfolio thumbnail'}
+            width={350}
+            height={200}
+          />
+        ) : (
+          <Image
+            className='w-full h-[270px] object-cover rounded-lg'
+            src='/assets/svg/placeholder.svg'
+            alt={title || 'Portfolio thumbnail'}
+            width={350}
+            height={200}
+          />
+        )}
+        <div className='space-y-2 mt-2'>
+          <h3 className='text-xl font-semibold'>{title}</h3>
+          {/* <div>
           <div>
             {Array.isArray(description) ? (
               <PortableText value={description} />
@@ -33,8 +44,8 @@ const PortfolioCard = ({
               </p>
             )}
           </div>
-        </div>
-        {/* {live_link && (
+        </div> */}
+          {/* {live_link && (
           <a
             href={live_link}
             target='_blank'
@@ -52,8 +63,9 @@ const PortfolioCard = ({
             Visit Live Site
           </a>
         )} */}
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

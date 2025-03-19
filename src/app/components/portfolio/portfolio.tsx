@@ -23,11 +23,14 @@ export default function Portfolio({ portfolioData }: portfolioProps) {
             thumbnailUrl={item.thumbnailUrl}
             thumbnailAlt={item.thumbnailAlt}
             live_link={item.live_link}
+            slug={item.slug}
           />
         ))}
       </div>
     </section>
   ) : (
-    <p>No portfolio items found.</p>
+    <p className='max-w-full lg:max-w-[70%] mx-auto my-8 lg:my-12'>
+      No portfolio items found.
+    </p>
   );
 }

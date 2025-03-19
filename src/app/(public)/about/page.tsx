@@ -38,7 +38,7 @@ const experiences = [
 
 export default function About() {
   return (
-    <section className='max-w-full lg:max-w-[70%] mx-auto py-14 px-4 lg:px-0 space-y-8'>
+    <section className='max-w-full lg:max-w-[70%] mx-auto pt-14 pb-7 px-4 lg:px-0 space-y-8'>
       <div>
         <h1 className='text-3xl font-semibold border-b pb-6 mb-6'>About</h1>
         <div className='space-y-6'>

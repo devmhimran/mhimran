@@ -7,12 +7,7 @@ export const revalidate = 30;
 async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
   const query = `
    *[_type == "portfolio"]| order(_createdAt desc) {
-        title,
-        live_link,
-        description,
-        "imageUrls": images[].asset->url,
-        "thumbnailUrl": thumbnail.asset->url,
-        "thumbnailAlt": thumbnail.alt
+        slug,
       }
   `;
 
@@ -26,6 +21,17 @@ async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const projects = await fetchPortfolioData();
+
+  const projectEntries: MetadataRoute.Sitemap = projects.map((project) => {
+    return {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/projects/${project.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    };
+  });
+
   return [
     {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
@@ -33,5 +39,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'yearly',
       priority: 1,
     },
+    ...projectEntries,
   ];
 }

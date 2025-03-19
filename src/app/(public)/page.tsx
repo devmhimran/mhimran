@@ -14,7 +14,8 @@ async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
       description,
       "imageUrls": images[].asset->url,
       "thumbnailUrl": thumbnail.asset->url,
-      "thumbnailAlt": thumbnail.alt
+      "thumbnailAlt": thumbnail.alt,
+      slug
     }
   `;
 

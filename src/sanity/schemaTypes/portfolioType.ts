@@ -11,6 +11,11 @@ export const portfolioType = defineType({
       type: 'string',
     },
     {
+      name: 'slug',
+      title: 'Slug',
+      type: 'string',
+    },
+    {
       name: 'live_link',
       title: 'Live Link',
       type: 'string',
@@ -18,7 +23,12 @@ export const portfolioType = defineType({
     {
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+        },
+      ],
     },
     {
       name: 'images',
