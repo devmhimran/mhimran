@@ -3,8 +3,9 @@ import Image from 'next/image';
 import { client } from '@/sanity/lib/client';
 import Link from 'next/link';
 import { SquareArrowOutUpRight } from 'lucide-react';
-import GalleryWithLightbox from '@/app/components/GalleryWithLighbox/GalleryWithLighbox';
+
 import { Metadata } from 'next';
+import { GalleryWithLightbox, PortableTextComponent } from '@/app/components';
 
 interface ImageAsset {
   _id: string;
@@ -163,7 +164,10 @@ export default async function PortfolioDetails({ params }: { params: Params }) {
             Description
           </h2>
           <div className='text-custom-tertiary leading-1.5'>
-            <PortableText value={portfolio.description} />
+            <PortableText
+              value={portfolio.description}
+              components={PortableTextComponent}
+            />
           </div>
         </div>
       )}
