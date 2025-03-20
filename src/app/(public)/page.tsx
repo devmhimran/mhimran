@@ -1,8 +1,8 @@
-// app/page.jsx
 import { client } from '@/sanity/lib/client';
-import { Hero, Portfolio } from '../components';
+import { Button, Hero, Portfolio } from '../components';
 import PortfolioCard from '../components/portfolio-card/portfolio-card';
 import { PortfolioCardProps } from '../types/global-types';
+import Link from 'next/link';
 
 export const revalidate = 30;
 
@@ -35,6 +35,11 @@ export default async function Home() {
     <>
       <Hero />
       <Portfolio portfolioData={portfolioData} />
+      <div className='flex justify-center mt-6 lg:mt-10'>
+        <Link href='/projects'>
+          <Button>View More</Button>
+        </Link>
+      </div>
     </>
   );
 }
