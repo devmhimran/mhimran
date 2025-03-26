@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 30;
+export const revalidate = 3600;
 
 async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
   const query = `

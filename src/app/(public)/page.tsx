@@ -4,7 +4,7 @@ import PortfolioCard from '../components/portfolio-card/portfolio-card';
 import { PortfolioCardProps } from '../types/global-types';
 import Link from 'next/link';
 
-export const revalidate = 30;
+export const revalidate = 3600;
 
 async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
   const query = `

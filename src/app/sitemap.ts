@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { PortfolioCardProps } from './types/global-types';
 import { client } from '@/sanity/lib/client';
 
-export const revalidate = 30;
+export const revalidate = 3600;
 
 async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
   const query = `

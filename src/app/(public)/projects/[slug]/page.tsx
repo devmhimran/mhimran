@@ -35,7 +35,7 @@ interface Params {
   slug: string;
 }
 
-export const revalidate = 10;
+export const revalidate = 3600;
 
 const query = `*[_type == "portfolio" && slug == $slug][0] {
   title,
