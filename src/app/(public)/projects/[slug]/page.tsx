@@ -152,6 +152,9 @@ export default async function PortfolioDetails({ params }: { params: Params }) {
                 alt={portfolio.title || 'Portfolio thumbnail'}
                 width={350}
                 height={200}
+                loading='lazy'
+                placeholder='blur'
+                blurDataURL='/assets/svg/placeholder.svg'
               />
             )}
           </div>

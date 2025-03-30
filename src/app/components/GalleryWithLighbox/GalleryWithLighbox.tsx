@@ -52,6 +52,9 @@ export default function GalleryWithLightbox({ images, title }: GalleryProps) {
               alt={image.caption || `${title} image ${index + 1}`}
               width={400}
               height={300}
+              loading='lazy'
+              placeholder='blur'
+              blurDataURL='/assets/svg/placeholder.svg'
               className='object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow'
               onError={() =>
                 console.error(`Failed to load thumbnail: ${image.asset.url}`)

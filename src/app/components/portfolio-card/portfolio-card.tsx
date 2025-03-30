@@ -30,6 +30,9 @@ const PortfolioCard = ({
             alt={title || 'Portfolio thumbnail'}
             width={350}
             height={200}
+            loading='lazy'
+            placeholder='blur'
+            blurDataURL='/assets/svg/placeholder.svg'
           />
         )}
         <div className='space-y-2 mt-2'>
