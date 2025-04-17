@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   description:
     'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js',
   keywords: [
+    'Mahmud Hasan Imran',
+    'Devmhimran',
+    'Mh Imran',
     'Software Developer',
     'Full Stack Developer',
     'Software Engineer',
