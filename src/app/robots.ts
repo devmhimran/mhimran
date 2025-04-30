@@ -8,14 +8,11 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: [
           '/studio',
-          '/api',
-          '/_next',
-          '/favicon.ico',
-          '/sitemap.xml',
-          '/robots.txt',
+          '/api',   
+          '/_next', 
         ],
       },
     ],
-    sitemap: `${process.env.NEXT_PUBLIC_BASE_URL}/sitemap.xml`,
+    sitemap: `${process.env.NEXT_PUBLIC_BASE_URL}/sitemap.xml`, 
   };
 }
