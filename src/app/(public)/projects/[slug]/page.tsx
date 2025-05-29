@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { client } from '@/sanity/lib/client';
 import Link from 'next/link';
 import { SquareArrowOutUpRight } from 'lucide-react';
-
 import { Metadata } from 'next';
 import { GalleryWithLightbox, PortableTextComponent } from '@/app/components';
 
@@ -68,31 +67,112 @@ export async function generateMetadata({
 
   if (!portfolio) {
     return {
-      title: 'Portfolio Not Found',
-      description: 'The requested portfolio could not be found.',
+      title: 'Portfolio Not Found | Devmhimran',
+      description: 'The requested portfolio project could not be found.',
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 
+  const description = portfolio.description
+    ? `${portfolio.description[0]?.children[0]?.text.slice(0, 150)}...`
+    : `Explore ${portfolio.title}, a portfolio project by Mahmud Hasan Imran.`;
+
   return {
-    title: `${portfolio.title} | Your Portfolio Site`,
-    description: portfolio.description
-      ? `${portfolio.description[0]?.children[0]?.text.slice(0, 150)}...`
-      : `Explore ${portfolio.title}, a portfolio project.`,
-    openGraph: {
-      title: portfolio.title,
-      description: portfolio.description
-        ? `${portfolio.description[0]?.children[0]?.text.slice(0, 150)}...`
-        : `Explore ${portfolio.title}, a portfolio project.`,
-      url: `/portfolio/${portfolio.slug}`,
-      images: portfolio.thumbnail?.asset?.url
-        ? [{ url: portfolio.thumbnail.asset.url, width: 800, height: 400 }]
-        : [{ url: '/assets/svg/placeholder.svg', width: 350, height: 200 }],
+    title: `${portfolio.title} | Devmhimran - Software Developer`,
+    description,
+    keywords: [
+      `${portfolio.title}`,
+      'Mahmud Hasan Imran project',
+      'Devmhimran portfolio',
+      'web development project',
+      'software developer project',
+      'React project',
+      'Next.js project',
+    ],
+    robots: {
+      index: true,
+      follow: true,
     },
+    openGraph: {
+      type: 'website',
+      title: `${portfolio.title} | Devmhimran - Software Developer`,
+      description,
+      url: `https://www.devmhimran.com/portfolio/${portfolio.slug}`,
+      images: portfolio.thumbnail?.asset?.url
+        ? [
+            {
+              url: portfolio.thumbnail.asset.url,
+              width: 800,
+              height: 400,
+              alt: `${portfolio.title} Thumbnail`,
+            },
+          ]
+        : [
+            {
+              url: 'https://www.devmhimran.com/assets/svg/placeholder.svg',
+              width: 350,
+              height: 200,
+              alt: 'Portfolio Thumbnail',
+            },
+          ],
+      siteName: 'Devmhimran - Software Developer',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${portfolio.title} | Devmhimran - Software Developer`,
+      description,
+      images: portfolio.thumbnail?.asset?.url
+        ? [portfolio.thumbnail.asset.url]
+        : ['https://www.devmhimran.com/assets/svg/placeholder.svg'],
+    },
+    metadataBase: new URL('https://www.devmhimran.com'),
   };
 }
 
 async function fetchPortfolio(slug: string): Promise<Portfolio | null> {
   return await client.fetch(query, { slug });
+}
+
+// JSON-LD for individual portfolio page
+function generatePortfolioJsonLd(portfolio: Portfolio | null) {
+  if (!portfolio) {
+    return null;
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: portfolio.title,
+    url: `https://www.devmhimran.com/portfolio/${portfolio.slug}`,
+    description: portfolio.description
+      ? `${portfolio.description[0]?.children[0]?.text.slice(0, 150)}...`
+      : `Explore ${portfolio.title}, a portfolio project by Mahmud Hasan Imran.`,
+    image:
+      portfolio.thumbnail?.asset?.url ||
+      'https://www.devmhimran.com/assets/svg/placeholder.svg',
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://www.devmhimran.com',
+      name: 'Devmhimran - Software Developer',
+    },
+    author: {
+      '@type': 'Person',
+      name: 'Mahmud Hasan Imran',
+      url: 'https://www.devmhimran.com/about',
+      sameAs: [
+        'https://www.facebook.com/devmhimran01',
+        'https://github.com/devmhimran',
+        'https://www.linkedin.com/in/devmhimran',
+      ],
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://www.devmhimran.com/portfolio/${portfolio.slug}`,
+    },
+  };
 }
 
 export default async function PortfolioDetails({ params }: { params: Params }) {
@@ -107,8 +187,16 @@ export default async function PortfolioDetails({ params }: { params: Params }) {
     );
   }
 
+  const jsonLd = generatePortfolioJsonLd(portfolio);
+
   return (
     <div className='container mx-auto py-8 px-4'>
+      {jsonLd && (
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
       <div className='mb-8'>
         <h1 className='text-4xl font-bold text-gray-800 mb-2'>
           {portfolio.title}
@@ -119,6 +207,7 @@ export default async function PortfolioDetails({ params }: { params: Params }) {
             target='_blank'
             rel='noopener noreferrer'
             className='text-blue-600 hover:underline text-lg'
+            aria-label={`Visit live site for ${portfolio.title}`}
           >
             <div className='flex items-center space-x-2'>
               <span>Visit Live Site</span>

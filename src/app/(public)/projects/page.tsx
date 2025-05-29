@@ -1,14 +1,57 @@
 import { Portfolio } from '@/app/components';
 import { PortfolioCardProps } from '@/app/types/global-types';
 import { client } from '@/sanity/lib/client';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Projects | Devmhimran',
-  description: "Explore Mahmud Hasan Imran's projects",
+  description:
+    'Explore the projects of Mahmud Hasan Imran, showcasing expertise in Next.js, React, and Express.js.',
+  keywords: [
+    'Mahmud Hasan Imran projects',
+    'Devmhimran projects',
+    'software developer portfolio',
+    'web development projects',
+  ],
   robots: {
-    follow: true,
     index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: 'website',
+    title: 'Projects | Devmhimran',
+    description:
+      'View the portfolio of Mahmud Hasan Imran’s web development projects.',
+    url: 'https://www.devmhimran.com/projects',
+    images: [
+      {
+        url: 'https://www.devmhimran.com/og.jpg',
+        width: 1280,
+        height: 769,
+        alt: 'Devmhimran Projects Page',
+      },
+    ],
+    siteName: 'Devmhimran - Software Developer',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Projects | Devmhimran',
+    description:
+      'View the portfolio of Mahmud Hasan Imran’s web development projects.',
+    images: ['https://www.devmhimran.com/og-projects.jpg'],
+  },
+};
+
+const projectJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Projects by Mahmud Hasan Imran',
+  url: 'https://www.devmhimran.com/projects',
+  description:
+    'Explore the projects of Mahmud Hasan Imran, showcasing expertise in Next.js, React, and Express.js.',
+  isPartOf: {
+    '@type': 'WebSite',
+    url: 'https://www.devmhimran.com',
+    name: 'Devmhimran - Software Developer',
   },
 };
 
@@ -38,5 +81,15 @@ async function fetchPortfolioData(): Promise<PortfolioCardProps[]> {
 
 export default async function Projects() {
   const portfolioData = await fetchPortfolioData();
-  return <Portfolio portfolioData={portfolioData} />;
+  return (
+    <>
+      {projectJsonLd && (
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }}
+        />
+      )}
+      <Portfolio portfolioData={portfolioData} />
+    </>
+  );
 }

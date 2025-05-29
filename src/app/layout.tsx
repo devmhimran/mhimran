@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import './globals.css';
 import localFont from 'next/font/local';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
-
 import { cn } from './lib/utils';
 
 const SaansFont = localFont({
@@ -11,9 +10,9 @@ const SaansFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Devmhimran -  Software Developer',
+  title: 'Devmhimran - Software Developer',
   description:
-    'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js',
+    'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js.',
   keywords: [
     'Mahmud Hasan Imran',
     'Devmhimran',
@@ -30,25 +29,19 @@ export const metadata: Metadata = {
     'Backend Developer',
     'MERN Stack Developer',
   ],
-  twitter: {
-    card: 'summary_large_image',
-    images: ['/og.jpg'],
-    title: 'Devmhimran - Software Developer',
-    description:
-      'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js',
-  },
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
     type: 'website',
-    title: 'Devmhimran -  Software Developer',
+    title: 'Devmhimran - Software Developer',
     description:
-      'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js',
+      'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js.',
+    url: 'https://www.devmhimran.com',
     images: [
       {
-        url: '/og.jpg',
+        url: 'https://www.devmhimran.com/og.jpg',
         width: 1280,
         height: 769,
         alt: 'Devmhimran - Software Developer',
@@ -56,16 +49,26 @@ export const metadata: Metadata = {
     ],
     siteName: 'Devmhimran - Software Developer',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Devmhimran - Software Developer',
+    description:
+      'Mahmud Hasan Imran is a software developer specializing in Next.js, React, and Express.js.',
+    images: ['https://www.devmhimran.com/og.jpg'],
+  },
   metadataBase: new URL('https://www.devmhimran.com'),
 };
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Mahmud Hasan Imran',
-  image: 'https://www.devmhimran.com/demhimran-avatar.webp',
+  '@type': 'WebSite',
+  name: 'Devmhimran - Software Developer',
   url: 'https://www.devmhimran.com',
-  jobTitle: 'Product Engineer',
+  author: {
+    '@type': 'Person',
+    name: 'Mahmud Hasan Imran',
+    url: 'https://www.devmhimran.com/about',
+  },
   sameAs: [
     'https://www.facebook.com/devmhimran01',
     'https://github.com/devmhimran',

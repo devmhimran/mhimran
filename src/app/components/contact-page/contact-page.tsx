@@ -91,7 +91,6 @@ export default function ContactPage() {
           setLoading(false);
         },
         (error) => {
-          console.log(error.text);
           toast.error('Failed to send message');
           setLoading(false);
         }
