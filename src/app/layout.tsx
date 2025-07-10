@@ -74,6 +74,26 @@ const jsonLd = {
     'https://github.com/devmhimran',
     'https://www.linkedin.com/in/devmhimran',
   ],
+  hasPart: [
+    {
+      '@type': 'WebPage',
+      url: 'https://www.devmhimran.com/projects',
+      name: 'Projects',
+      position: 1,
+    },
+    {
+      '@type': 'WebPage',
+      url: 'https://www.devmhimran.com/about',
+      name: 'About',
+      position: 2,
+    },
+    {
+      '@type': 'WebPage',
+      url: 'https://www.devmhimran.com/contact',
+      name: 'Contact',
+      position: 3,
+    },
+  ],
 };
 
 export default function RootLayout({

@@ -56,6 +56,7 @@ const aboutJsonLd = {
     url: 'https://www.devmhimran.com',
     name: 'Devmhimran - Software Developer',
   },
+  position: 2,
   author: {
     '@type': 'Person',
     name: 'Mahmud Hasan Imran',
@@ -132,7 +133,7 @@ export default function About() {
               project, my focus is always on delivering tools and experiences
               that people find intuitive and valuable.
             </p>
-            <p className='text-lg/8 text-custom-tertiary '>
+            <p className='text-lg/8 text-custom-tertiary'>
               I love blending creativity with code and am always eager to tackle
               new challenges. If you&apos;re interested in collaborating on a
               freelance project or just want to connect, feel free to reach out
@@ -183,14 +184,14 @@ export default function About() {
               <Image
                 src='/assets/img/bubt-logo.webp'
                 alt='bubt logo'
-                className='w-[60px] rounded-lg p-2 '
+                className='w-[60px] rounded-lg p-2'
                 width={60}
                 height={60}
               />
             </div>
             <div>
               <h2 className='text-xl font-semibold'>
-                Bangladesh University of Business and Technology (BUBT
+                Bangladesh University of Business and Technology (BUBT)
               </h2>
               <p className='text-lg text-custom-tertiary'>
                 Computer Science & Engineering

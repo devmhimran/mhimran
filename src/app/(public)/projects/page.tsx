@@ -53,6 +53,16 @@ const projectJsonLd = {
     url: 'https://www.devmhimran.com',
     name: 'Devmhimran - Software Developer',
   },
+  position: 1,
+  author: {
+    '@type': 'Person',
+    name: 'Mahmud Hasan Imran',
+    url: 'https://www.devmhimran.com/about',
+  },
+  sameAs: [
+    'https://github.com/devmhimran',
+    'https://www.linkedin.com/in/devmhimran',
+  ],
 };
 
 export const revalidate = 3600;
