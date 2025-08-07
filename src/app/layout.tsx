@@ -107,9 +107,7 @@ export default function RootLayout({
         <GoogleAnalytics
           gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''}
         />
-        <GoogleTagManager
-          gtmId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''}
-        />
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ''} />
         <script
           type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
