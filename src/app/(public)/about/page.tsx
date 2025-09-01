@@ -69,6 +69,49 @@ const aboutJsonLd = {
   },
 };
 
+const techStack = [
+  {
+    img: '/assets/logo/typescript.png',
+    name: 'TypeScript',
+  },
+  {
+    img: '/assets/logo/next-js.png',
+    name: 'Next.js',
+  },
+  {
+    img: '/assets/logo/react-js.png',
+    name: 'React.js',
+  },
+  {
+    img: '/assets/logo/shadcn.png',
+    name: 'Shadcn/ui',
+  },
+  {
+    img: '/assets/logo/express-js.png',
+    name: 'Express.js',
+  },
+  {
+    img: '/assets/logo/figma.png',
+    name: 'Figma',
+  },
+  {
+    img: '/assets/logo/postman.png',
+    name: 'Postman',
+  },
+  {
+    img: '/assets/logo/wordpress.png',
+    name: 'WordPress',
+  },
+  {
+    img: '/assets/logo/woocommerce.png',
+    name: 'WooCommerce',
+  },
+  {
+    img: '/assets/logo/elementor.png',
+    name: 'Elementor',
+  },
+];
+
 const experiences = [
   {
     img: '/assets/img/tutors-fi-logo.webp',
@@ -171,6 +214,30 @@ export default function About() {
                     </p>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 className='text-3xl font-semibold border-b pb-6 mb-6'>
+            Tech Stack
+          </h3>
+          <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 my-6'>
+            {techStack.map((tech, index) => (
+              <div
+                key={index}
+                className='flex flex-col items-center justify-center bg-white rounded-lg p-4 hover:shadow-lg transition-shadow'
+              >
+                <Image
+                  src={tech.img}
+                  alt={tech.name}
+                  className='w-12 h-12 object-contain'
+                  width={48}
+                  height={48}
+                />
+                <p className='mt-2 text-sm font-medium text-custom-tertiary'>
+                  {tech.name}
+                </p>
               </div>
             ))}
           </div>

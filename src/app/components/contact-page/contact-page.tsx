@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { toast } from 'sonner';
 import { useRef, useState } from 'react';
+import Link from 'next/link';
 
 type FormInputs = {
   user_name: string;
@@ -66,6 +67,18 @@ export default function ContactPage() {
   };
 
   const sendEmail: SubmitHandler<FormInputs> = (data) => {
+    const restrictedEmails = [
+      'devmhimran@gmail.com',
+      'mahmud.bubt.150@gmail.com',
+    ];
+
+    if (restrictedEmails.includes(data.user_email.toLowerCase())) {
+      toast.error(
+        'This email address belongs to the site owner. Please use a different email address.'
+      );
+      return;
+    }
+
     const { canSubmit, newCount } = checkSubmissionLimit();
 
     if (!canSubmit) {
@@ -113,7 +126,19 @@ export default function ContactPage() {
             <p className='text-xl capitalize font-semibold text-custom-primary'>
               {item.name}
             </p>
-            <p className='text-custom-tertiary'>{item.value}</p>
+            {item.value === 'email' ? (
+              <Link href={`mailto:${item.value}`} target='_blank'>
+                <p className='text-custom-tertiary'>{item.value}</p>
+              </Link>
+            ) : (
+              <Link
+                href={`https://${item.value}`}
+                target='_blank'
+                className='hover:underline text-custom-tertiary'
+              >
+                {item.value}
+              </Link>
+            )}
           </div>
         ))}
       </div>
