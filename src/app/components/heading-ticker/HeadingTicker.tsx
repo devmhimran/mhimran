@@ -18,7 +18,7 @@ export default function HeadingTicker() {
     <div className='overflow-hidden'>
       <Ticker offset='run-in' move={true} mode='chain' speed={6}>
         {() => (
-          <div className='flex items-center gap-8 py-1 px-2 bg-orange-400'>
+          <div className='flex items-center gap-8 py-1 px-2 bg-custom-primary text-[#fbfbfb]'>
             <span className='text-base whitespace-nowrap'>
               🚀 Open to new opportunities! Looking to contribute to innovative
               projects with Next.js, React, and TypeScript
