@@ -18,6 +18,7 @@
     "@sanity/types": "^3.79.0",
     "@sanity/ui": "^2.15.6",
     "@sanity/vision": "3",
+    "@studio-freight/lenis": "^1.0.42",
     "clsx": "^2.1.1",
     "lucide": "^0.479.0",
     "lucide-react": "^0.479.0",
